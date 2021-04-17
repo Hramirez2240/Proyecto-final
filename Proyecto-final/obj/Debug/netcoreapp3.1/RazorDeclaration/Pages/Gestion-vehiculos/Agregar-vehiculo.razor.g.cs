@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Proyecto_final.Shared
+namespace Proyecto_final.Pages.Gestion_vehiculos
 {
     #line hidden
     using System;
@@ -75,7 +75,8 @@ using Proyecto_final.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/agregar-vehiculo")]
+    public partial class Agregar_vehiculo : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -83,16 +84,14 @@ using Proyecto_final.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 23 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Shared\NavMenu.razor"
-       
-    private bool collapseNavMenu = true;
+#line 44 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
+          
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+        string marca = "", modelo = "", anio = "", color = "", precio_dia = "";
+        string tipo = "", capacidad = "", pasajeros = "", matricula = "", num_seguro = "";
+        string foto = "", latitud = "", longitud = "";
 
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
+    
 
 #line default
 #line hidden
