@@ -1,50 +1,155 @@
 @page "/agregar-vehiculo"
+@using Models
+@using Proyecto_final.Services
+@using System.Threading.Tasks
+@inject ICargarArchivo cargarArchivo
 
 <div class="container">
     <h1 style="text-align: center;" class="mt-2 col-md-12 pt-2 mb-4">Agregar vehiculos</h1>
+    <br /><br />
+    <button id="boton1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Agregar
+    </button>
 
-    <input type="text" placeholder="Marca:" @bind="marca" class="form-control" />
-    <input type="text" placeholder="Modelo:" @bind="modelo" class="form-control" />
-    <input type="text" placeholder="Año:" @bind="anio" class="form-control" />
-    <input type="text" placeholder="Color:" @bind="color" class="form-control" />
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" @bind="precio_dia" placeholder="Precio por día">
-        <div class="input-group-append">
-            <span class="input-group-text">.00</span>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agregando vehículo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Marca:" @bind="marca" class="form-control" />
+                    <input type="text" placeholder="Modelo:" @bind="modelo" class="form-control" />
+                    <input type="text" placeholder="Año:" @bind="anio" class="form-control" />
+                    <input type="text" placeholder="Color:" @bind="color" class="form-control" />
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" @bind="precio_dia" placeholder="Precio por día">
+                        <div class="input-group-append">
+                            <span id="dinero" class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                    <select @bind="tipo" class="form-control">
+                        <option value="" disabled selected hidden>Tipo de carro</option>
+                        <option value="Motocicleta">Motocicleta</option>
+                        <option value="Carro">Carro</option>
+                        <option value="Camión">Camión</option>
+                        <option value="Barco">Barco</option>
+                        <option value="Avión">Avión</option>
+                    </select>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Capacidad carga:" aria-describedby="basic-addon2" @bind="capacidad">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="capacidad">Kg</span>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Pasajeros:" @bind="pasajeros" class="form-control" />
+                    <input type="text" placeholder="Matricula:" @bind="matricula" class="form-control" />
+                    <input type="text" placeholder="Numero de seguro:" @bind="num_seguro" class="form-control" />
+                    <BlazorInputFile.InputFile OnChange="HandleFileSelected" multiple accept=".jpg, .jpeg, .png" />
+                    <input type="text" placeholder="Latitud:" @bind="latitud" class="form-control" />
+                    <input type="text" placeholder="Longitud" @bind="longitud" class="form-control" />
+                    @if (file != null)
+                    {
+                        <label>Nombre foto: @file.Name</label>
+                    }
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" @onclick="AgregarVehiculo">Agregar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    @if (mensaje == 1)
+                    {
+                        <div class="alert alert-success" role="alert">Vehículo agregado correctamente</div>
+                    }
+                </div>
+            </div>
         </div>
     </div>
-    <select @bind="tipo" class="form-control">
-        <option value="" disabled selected hidden>Tipo de carro</option>
-        <option value="A+">A+</option>
-        <option value="A-">A-</option>
-        <option value="B+">B+</option>
-        <option value="B-">B-</option>
-        <option value="O+">O+</option>
-        <option value="O-">O-</option>
-        <option value="AB+">AB+</option>
-        <option value="AB-">AB-</option>
-    </select>
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Capacidad carga:" aria-describedby="basic-addon2" @bind="capacidad">
-        <div class="input-group-append">
-            <span class="input-group-text" id="basic-addon2">Kg</span>
-        </div>
-    </div>
-    <input type="text" placeholder="Pasajeros:" @bind="pasajeros" class="form-control" />
-    <input type="text" placeholder="Matricula:" @bind="matricula" class="form-control" />
-    <input type="text" placeholder="Numero de seguro:" @bind="num_seguro" class="form-control" />
-    <label>Foto del vehículo:</label>
-    <input type="file" name="uploadedimage" accept="image/png, .jpeg, .jpg, image/gif">
-    <input type="text" placeholder="Latitud:" @bind="latitud" class="form-control" />
-    <input type="text" placeholder="Longitud" @bind="longitud" class="form-control" />
 
-    <button class="btn btn-primary">Agregar</button>
+    <br /><br />
+    <hr>
+
+    @if (lista_vehiculos != null)
+    {
+        @foreach (var ve in lista_vehiculos)
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="./imagenes/@ve.Foto" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">@ve.Marca</h5>
+                </div>
+                <div class="card-body">
+                    <label>Modelo: @ve.Modelo</label>
+                    <label>Año: @ve.Anio</label>
+                    <label>Color: @ve.Color</label>
+                    <label>Precio/dia: @ve.PrecioDia</label>
+                    <label>Tipo: @ve.Tipo</label>
+                    <label>Capacidad: @ve.Capacidad</label>
+                    <label>Pasajeros: @ve.Pasajeros</label>
+                    <label>Matricula: @ve.Matricula</label>
+                    <label>Numero Seguro: @ve.NumSeguro</label>
+                    <label>Latitud: @ve.Latitud</label>
+                    <label>Longitud: @ve.Longitud</label>
+                </div>
+            </div>
+        }
+    }
+
 </div>
 
     @code{
 
+        IFileListEntry file;
+
+        async Task HandleFileSelected(IFileListEntry[] files)
+        {
+            file = files.FirstOrDefault();
+
+            if (file != null)
+            {
+                await cargarArchivo.Cargar(file);
+            }
+        }
+
         string marca = "", modelo = "", anio = "", color = "", precio_dia = "";
         string tipo = "", capacidad = "", pasajeros = "", matricula = "", num_seguro = "";
         string foto = "", latitud = "", longitud = "";
+
+        int mensaje = 0;
+
+        public List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
+        public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
+
+        public void AgregarVehiculo()
+        {
+            using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+            {
+                Vehiculos ve = new Vehiculos();
+                ve.Marca = marca;
+                ve.Modelo = modelo;
+                ve.Anio = anio;
+                ve.Color = color;
+                ve.PrecioDia = precio_dia;
+                ve.Tipo = tipo;
+                ve.Capacidad = capacidad;
+                ve.Pasajeros = pasajeros;
+                ve.Matricula = matricula;
+                ve.NumSeguro = num_seguro;
+                ve.Foto = file.Name;
+                ve.Latitud = latitud;
+                ve.Longitud = longitud;
+
+                context.Add(ve);
+                context.SaveChanges();
+            }
+
+            mensaje = 1;
+        }
+
+        protected override void OnInitialized()
+        {
+            lista_vehiculos = GetVehiculos();
+        }
 
     }

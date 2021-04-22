@@ -83,3 +83,4 @@ C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proye
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.dll
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.pdb
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.genruntimeconfig.cache
+C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\bin\Debug\netcoreapp3.1\BlazorInputFile.dll

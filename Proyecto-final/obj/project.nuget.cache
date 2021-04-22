@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qk5cZlTM5U068b1pae1XaxjjHn+9LZvLWbhijOwWEx/Q4DPS7Pnam9fps/4G6KYgdZAQDWsxmq7dhGNHZmuLSw==",
+  "dgSpecHash": "R7rutaEEiTHz2uN5l74NlheUQMhCuJyYR8AiU93THDq4/FoOlKeZ7dcLlBSLnCo3xQGwYEsQKY+aLgHxDR+awQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ramirez Rodriguez\\.nuget\\packages\\blazorinputfile\\0.2.0\\blazorinputfile.0.2.0.nupkg.sha512",
     "C:\\Users\\Ramirez Rodriguez\\.nuget\\packages\\mad.jsonconverters.nestedjsonconverter\\1.0.1\\mad.jsonconverters.nestedjsonconverter.1.0.1.nupkg.sha512",
     "C:\\Users\\Ramirez Rodriguez\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.14\\microsoft.aspnetcore.authorization.3.1.14.nupkg.sha512",
     "C:\\Users\\Ramirez Rodriguez\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.14\\microsoft.aspnetcore.components.3.1.14.nupkg.sha512",

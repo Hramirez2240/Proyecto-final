@@ -40,6 +40,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "BlazorInputFile": {
+              "target": "Package",
+              "version": "[0.2.0, )"
+            },
             "MAD.JsonConverters.NestedJsonConverter": {
               "target": "Package",
               "version": "[1.0.1, )"
