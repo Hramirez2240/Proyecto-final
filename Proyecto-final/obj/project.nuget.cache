@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "41WyQZuWpOHeulWZPRel2tfIVxpwwhFrvmiJk/EWoFEf9vGcaoyvgJdGlChK452ggoJAmEc4gqeAu0haBF6fQg==",
+  "dgSpecHash": "y3OesMHRoFjn+A1vzvDmCAyIDlL3wJ/SmW1W2ndFFlo76+TvmqzyMMafxi8KoDuhsKVsf1OxTyTVQFeU99uzWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\dhima\\Desktop\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dhima\\.nuget\\packages\\blazorinputfile\\0.2.0\\blazorinputfile.0.2.0.nupkg.sha512",
     "C:\\Users\\dhima\\.nuget\\packages\\mad.jsonconverters.nestedjsonconverter\\1.0.1\\mad.jsonconverters.nestedjsonconverter.1.0.1.nupkg.sha512",
     "C:\\Users\\dhima\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.14\\microsoft.aspnetcore.authorization.3.1.14.nupkg.sha512",
     "C:\\Users\\dhima\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.14\\microsoft.aspnetcore.components.3.1.14.nupkg.sha512",
@@ -182,5 +183,12 @@
     "C:\\Users\\dhima\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\dhima\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\dhima\\Desktop\\Proyecto-final\\Proyecto-final\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

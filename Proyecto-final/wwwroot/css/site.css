@@ -4,6 +4,18 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+#boton1{
+    position: relative;
+    top: -20px;
+    left: 370px;
+    width: 200px;
+}
+
+input{
+    margin: 10px;
+}
+
+
 a, .btn-link {
     color: #0366d6;
 }

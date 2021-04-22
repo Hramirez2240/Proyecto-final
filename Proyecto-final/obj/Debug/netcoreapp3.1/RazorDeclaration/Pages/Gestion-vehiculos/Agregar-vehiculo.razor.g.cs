@@ -75,7 +75,20 @@ using Proyecto_final.Shared;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/agregar-vehiculo")]
+#nullable restore
+#line 10 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+using System.IO;
+
+#line default
+#line hidden
+#nullable disable
     public partial class Agregar_vehiculo : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -83,19 +96,6 @@ using Proyecto_final.Shared;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 44 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
-          
-
-        string marca = "", modelo = "", anio = "", color = "", precio_dia = "";
-        string tipo = "", capacidad = "", pasajeros = "", matricula = "", num_seguro = "";
-        string foto = "", latitud = "", longitud = "";
-
-    
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

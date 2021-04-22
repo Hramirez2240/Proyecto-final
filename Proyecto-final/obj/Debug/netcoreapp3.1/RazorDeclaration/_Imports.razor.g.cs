@@ -75,6 +75,20 @@ using Proyecto_final.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+using System.IO;
+
+#line default
+#line hidden
+#nullable disable
     public partial class _Imports : System.Object
     {
         #pragma warning disable 1998

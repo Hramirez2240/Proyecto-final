@@ -83,6 +83,7 @@ C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proye
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.dll
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.pdb
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\bin\Debug\netcoreapp3.1\Proyecto-final.StaticWebAssets.xml
@@ -268,3 +269,7 @@ C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Raz
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Clientes\Details.cshtml.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Clientes\Edit.cshtml.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Clientes\Index.cshtml.g.cs
+=======
+C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\bin\Debug\netcoreapp3.1\BlazorInputFile.dll
+>>>>>>> 0c755d7c239752848de1799abf05e1c5d7ee98ba
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\bin\Debug\netcoreapp3.1\BlazorInputFile.dll

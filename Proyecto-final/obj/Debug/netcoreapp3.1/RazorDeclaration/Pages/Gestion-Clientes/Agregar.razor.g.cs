@@ -9,16 +9,6 @@ namespace Proyecto_final.Pages.Gestion_Clientes
     #line hidden
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
-#nullable restore
-#line 1 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
-using System.Net.Http;
-
-#line default
-#line hidden
-#nullable disable
 #nullable restore
 #line 2 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
@@ -75,6 +65,62 @@ using Proyecto_final.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+using System.IO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+using Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+using Proyecto_final.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+using System.Threading.Tasks;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+using System.Linq;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+using Microsoft.AspNetCore.Components;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Agregar-cli")]
     public partial class Agregar : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -83,6 +129,74 @@ using Proyecto_final.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 96 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+      
+    Data.DatosCedula dc = new Data.DatosCedula();
+    IFileListEntry file;
+
+    async Task HandleFileSelected(IFileListEntry[] files)
+    {
+        file = files.FirstOrDefault();
+
+        if (file != null)
+        {
+            await cargarArchivo.Cargar(file);
+        }
+    }
+
+    string cedula = "", Apellido = "", nombre = "", correo = "", licencia = "";
+    string nacionalidad = "", sangre = "", ft1 = "", ft2 = "";
+
+
+
+    int mensaje = 0;
+
+    public List<Cliente> lista_cliente = new List<Cliente>();
+    public List<Cliente> GetCliente() => new db_a72daa_proyecContext().Cliente.ToList();
+
+    public void AgregarCliente()
+    {
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            Cliente ve = new Cliente();
+            ve.Cedula = cedula;
+            ve.Nombre = nombre;
+            ve.Apellido = Apellido;
+            ve.Nacionalidad = nacionalidad;
+            ve.Correo = correo;
+            ve.Sangre = sangre;
+            ve.Licencia = licencia;
+            ve.Ft1 = ft1;
+            ve.Ft2 = file.Name;
+
+
+            context.Add(ve);
+            context.SaveChanges();
+        }
+
+        mensaje = 1;
+    }
+    public void buscar()
+    {
+        var Cd = dc.Datos(cedula);
+        nombre = Cd.Nombres;
+        Apellido = Cd.Apellido1;
+        ft1 = Cd.foto;
+
+    }
+
+    protected override void OnInitialized()
+    {
+        lista_cliente = GetCliente();
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarArchivo cargarArchivo { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient http { get; set; }
     }
 }
 #pragma warning restore 1591
