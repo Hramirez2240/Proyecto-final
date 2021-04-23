@@ -9096,19 +9096,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ramirez Rodriguez\\.nuget\\packages\\": {}
+    "C:\\Users\\Andriel Castillo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+      "projectUniqueName": "C:\\2021\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
       "projectName": "Proyecto-final",
-      "projectPath": "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
-      "packagesPath": "C:\\Users\\Ramirez Rodriguez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\obj\\",
+      "projectPath": "C:\\2021\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+      "packagesPath": "C:\\Users\\Andriel Castillo\\.nuget\\packages\\",
+      "outputPath": "C:\\2021\\Proyecto-final\\Proyecto-final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ramirez Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andriel Castillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9205,7 +9205,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
