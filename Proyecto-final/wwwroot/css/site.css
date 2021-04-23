@@ -4,6 +4,37 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+img{
+    height: 200px;
+}
+
+#carta{
+
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+#edit{
+    margin: 5px;
+}
+
+.container .card{
+
+    width: 400px;
+    height: 475px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
 #boton1{
     position: relative;
     top: -20px;
