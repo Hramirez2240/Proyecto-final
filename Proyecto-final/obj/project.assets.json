@@ -9096,19 +9096,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andriel Castillo\\.nuget\\packages\\": {}
+    "C:\\Users\\dhima\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\2021\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+      "projectUniqueName": "C:\\Users\\dhima\\Desktop\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
       "projectName": "Proyecto-final",
-      "projectPath": "C:\\2021\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
-      "packagesPath": "C:\\Users\\Andriel Castillo\\.nuget\\packages\\",
-      "outputPath": "C:\\2021\\Proyecto-final\\Proyecto-final\\obj\\",
+      "projectPath": "C:\\Users\\dhima\\Desktop\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+      "packagesPath": "C:\\Users\\dhima\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dhima\\Desktop\\Proyecto-final\\Proyecto-final\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Andriel Castillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dhima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9205,7 +9210,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
