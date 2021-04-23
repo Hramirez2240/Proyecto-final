@@ -118,7 +118,7 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 155 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
+#line 161 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
           
 
         IFileListEntry file;
@@ -138,6 +138,7 @@ using System.Threading.Tasks;
         string foto = "", latitud = "", longitud = "";
 
         int mensaje = 0;
+        bool validar;
 
         public List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
         public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.OrderByDescending(ee => ee.Id).ToList();
@@ -146,27 +147,37 @@ using System.Threading.Tasks;
         {
             using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
             {
-                Vehiculos ve = new Vehiculos();
-                ve.Marca = marca;
-                ve.Modelo = modelo;
-                ve.Anio = anio;
-                ve.Color = color;
-                ve.PrecioDia = precio_dia;
-                ve.Tipo = tipo;
-                ve.Capacidad = capacidad;
-                ve.Pasajeros = pasajeros;
-                ve.Matricula = matricula;
-                ve.NumSeguro = num_seguro;
-                ve.Foto = file.Name;
-                ve.Latitud = latitud;
-                ve.Longitud = longitud;
+                validar = context.Vehiculos.Any(ee => ee.Matricula == matricula);
+                if (validar)
+                {
+                    mensaje = 2;
+                }
 
-                context.Add(ve);
-                context.SaveChanges();
+                else
+                {
+                    Vehiculos ve = new Vehiculos();
+                    ve.Marca = marca;
+                    ve.Modelo = modelo;
+                    ve.Anio = anio;
+                    ve.Color = color;
+                    ve.PrecioDia = precio_dia;
+                    ve.Tipo = tipo;
+                    ve.Capacidad = capacidad;
+                    ve.Pasajeros = pasajeros;
+                    ve.Matricula = matricula;
+                    ve.NumSeguro = num_seguro;
+                    ve.Foto = file.Name;
+                    ve.Latitud = latitud;
+                    ve.Longitud = longitud;
+
+                    context.Add(ve);
+                    context.SaveChanges();
+
+                    Limpiar();
+                    mensaje = 1;
+                }
+
             }
-
-            Limpiar();
-            mensaje = 1;
         }
 
         public void Editar(int id)
