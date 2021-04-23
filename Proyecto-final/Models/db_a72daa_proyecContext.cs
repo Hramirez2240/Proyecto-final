@@ -20,6 +20,7 @@ namespace Proyecto_final.Models
         }
 
         public virtual DbSet<Cliente> Cliente { get; set; }
+        public virtual DbSet<Reservas> Reservas { get; set; }
         public virtual DbSet<Vehiculos> Vehiculos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -90,6 +91,33 @@ namespace Proyecto_final.Models
 
                 entity.Property(e => e.Sangre)
                     .IsRequired()
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_0900_ai_ci");
+            });
+
+            modelBuilder.Entity<Reservas>(entity =>
+            {
+                entity.ToTable("reservas");
+
+                entity.Property(e => e.Cliente)
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_0900_ai_ci");
+
+                entity.Property(e => e.FechaDeFin)
+                    .HasColumnName("Fecha de fin")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_0900_ai_ci");
+
+                entity.Property(e => e.FechaDeInicio)
+                    .HasColumnName("Fecha de inicio")
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_0900_ai_ci");
+
+                entity.Property(e => e.Vehiculo)
                     .HasColumnType("varchar(50)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_0900_ai_ci");

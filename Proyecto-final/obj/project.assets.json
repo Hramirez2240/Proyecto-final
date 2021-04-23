@@ -9096,11 +9096,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Ramirez Rodriguez\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\User\\.nuget\\packages\\": {}
+>>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
       "projectName": "Proyecto-final",
       "projectPath": "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
@@ -9109,6 +9114,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ramirez Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Programacion 3\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+      "projectName": "Proyecto-final",
+      "projectPath": "C:\\Users\\User\\Desktop\\Programacion 3\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Programacion 3\\Proyecto-final\\Proyecto-final\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
