@@ -557,7 +557,6 @@ C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\P
 C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Beneficios.razor.g.cs
 C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Deudores.razor.g.cs
 C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Mapa.razor.g.cs
-<<<<<<< HEAD
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Beneficios.razor.g.cs
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Deudores.razor.g.cs
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Mapa.razor.g.cs
@@ -566,7 +565,6 @@ C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proye
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Deudores.razor.g.cs
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Mapa.razor.g.cs
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Vehiculos.razor.g.cs
-=======
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.csprojAssemblyReference.cache
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.AssemblyInfoInputs.cache
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.AssemblyInfo.cs
@@ -757,3 +755,5 @@ C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\net
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.csproj.CopyComplete
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.genruntimeconfig.cache
 >>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
+C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
+C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs

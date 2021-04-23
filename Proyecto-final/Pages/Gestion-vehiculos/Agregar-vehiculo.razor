@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <select @bind="tipo" class="form-control">
-                        <option value="" disabled selected hidden>Tipo de carro</option>
+                        <option value="" disabled selected hidden>Tipo de transporte</option>
                         <option value="Motocicleta">Motocicleta</option>
                         <option value="Carro">Carro</option>
                         <option value="Camión">Camión</option>
@@ -112,7 +112,7 @@
                                         </div>
                                     </div>
                                     <select @bind="tipo" class="form-control">
-                                        <option value="" disabled selected hidden>Tipo de carro</option>
+                                        <option value="" disabled selected hidden>Tipo de transporte</option>
                                         <option value="Motocicleta">Motocicleta</option>
                                         <option value="Carro">Carro</option>
                                         <option value="Camión">Camión</option>
@@ -128,17 +128,12 @@
                                     <input type="text" placeholder="Pasajeros:" @bind="pasajeros" class="form-control" />
                                     <input type="text" placeholder="Matricula:" @bind="matricula" class="form-control" />
                                     <input type="text" placeholder="Numero de seguro:" @bind="num_seguro" class="form-control" />
-                                    <BlazorInputFile.InputFile OnChange="HandleFileSelected" multiple accept=".jpg, .jpeg, .png" />
-                                    @if (file != null)
-                                    {
-                                        <label>Nombre foto: @file.Name</label>
-                                    }
                                     <input type="text" placeholder="Latitud:" @bind="latitud" class="form-control" />
                                     <input type="text" placeholder="Longitud" @bind="longitud" class="form-control" />
 
                                 </div>
                                 <div class="modal-footer">
-                                    <button class="btn btn-primary">Guardar cambios</button>
+                                    <button class="btn btn-primary" @onclick="GuardarCambios">Guardar cambios</button>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                                     @if (mensaje == 1)
                                     {
@@ -222,10 +217,38 @@
                 pasajeros = datos.Pasajeros;
                 matricula = datos.Matricula;
                 num_seguro = datos.NumSeguro;
-                foto = datos.Foto;
                 latitud = datos.Latitud;
                 longitud = datos.Longitud;
             }
+        }
+
+        public void GuardarCambios()
+        {
+            using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+            {
+                Vehiculos ve = context.Vehiculos
+                .Where(e => e.Matricula == matricula)
+                .FirstOrDefault();
+
+                ve.Marca = marca;
+                ve.Modelo = modelo;
+                ve.Anio = anio;
+                ve.Color = color;
+                ve.PrecioDia = precio_dia;
+                ve.Tipo = tipo;
+                ve.Capacidad = capacidad;
+                ve.Pasajeros = pasajeros;
+                ve.Matricula = matricula;
+                ve.NumSeguro = num_seguro;
+                //ve.Foto = foto;
+                ve.Latitud = latitud;
+                ve.Longitud = longitud;
+
+                context.SaveChanges();
+            }
+
+            Limpiar();
+            mensaje = 1;
         }
 
         protected override void OnInitialized()

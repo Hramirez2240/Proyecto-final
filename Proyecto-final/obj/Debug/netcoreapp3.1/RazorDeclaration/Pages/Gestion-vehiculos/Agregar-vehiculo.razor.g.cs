@@ -12,154 +12,98 @@ namespace Proyecto_final.Pages.Gestion_vehiculos
     using System.Linq;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-<<<<<<< HEAD
 #line 1 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 1 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 2 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 2 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 3 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 3 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 4 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 4 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 5 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 5 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 6 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 6 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 7 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 7 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 8 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 8 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using Proyecto_final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 9 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 9 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using Proyecto_final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 10 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 10 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 11 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 11 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using System.IO;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 2 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
-=======
-#line 2 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 3 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
-=======
-#line 3 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using Proyecto_final.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 4 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
-=======
-#line 4 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
 using System.Threading.Tasks;
 
 #line default
@@ -174,11 +118,7 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-<<<<<<< HEAD
-#line 160 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
-=======
-#line 160 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
->>>>>>> b2855c681169ffd5ba2e991b5a644d626e73088c
+#line 155 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
           
 
         IFileListEntry file;
@@ -244,10 +184,38 @@ using System.Threading.Tasks;
                 pasajeros = datos.Pasajeros;
                 matricula = datos.Matricula;
                 num_seguro = datos.NumSeguro;
-                foto = datos.Foto;
                 latitud = datos.Latitud;
                 longitud = datos.Longitud;
             }
+        }
+
+        public void GuardarCambios()
+        {
+            using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+            {
+                Vehiculos ve = context.Vehiculos
+                .Where(e => e.Matricula == matricula)
+                .FirstOrDefault();
+
+                ve.Marca = marca;
+                ve.Modelo = modelo;
+                ve.Anio = anio;
+                ve.Color = color;
+                ve.PrecioDia = precio_dia;
+                ve.Tipo = tipo;
+                ve.Capacidad = capacidad;
+                ve.Pasajeros = pasajeros;
+                ve.Matricula = matricula;
+                ve.NumSeguro = num_seguro;
+                //ve.Foto = foto;
+                ve.Latitud = latitud;
+                ve.Longitud = longitud;
+
+                context.SaveChanges();
+            }
+
+            Limpiar();
+            mensaje = 1;
         }
 
         protected override void OnInitialized()
