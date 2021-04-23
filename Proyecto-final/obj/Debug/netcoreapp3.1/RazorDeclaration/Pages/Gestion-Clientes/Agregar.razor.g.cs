@@ -10,112 +10,176 @@ namespace Proyecto_final.Pages.Gestion_Clientes
     using System;
     using System.Collections.Generic;
 #nullable restore
+<<<<<<< HEAD
 #line 2 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 2 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 3 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 3 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 4 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 4 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 5 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 5 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 6 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 6 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 7 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 7 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 8 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 8 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Proyecto_final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 9 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 9 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Proyecto_final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 10 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 10 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 11 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 11 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using System.IO;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 2 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+=======
+#line 2 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 3 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+=======
+#line 3 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Proyecto_final.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 4 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+=======
+#line 4 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using System.Threading.Tasks;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 5 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+=======
+#line 5 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 6 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+=======
+#line 6 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using System.Linq;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 7 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+=======
+#line 7 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
 using Microsoft.AspNetCore.Components;
 
 #line default
@@ -130,7 +194,11 @@ using Microsoft.AspNetCore.Components;
         }
         #pragma warning restore 1998
 #nullable restore
+<<<<<<< HEAD
 #line 96 "c:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+=======
+#line 96 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+>>>>>>> 94702ceeb926fbb42cc320e41186436ef43832d6
       
     Data.DatosCedula dc = new Data.DatosCedula();
     IFileListEntry file;
