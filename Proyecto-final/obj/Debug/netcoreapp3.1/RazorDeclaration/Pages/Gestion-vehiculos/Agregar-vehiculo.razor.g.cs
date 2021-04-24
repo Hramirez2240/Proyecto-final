@@ -118,7 +118,7 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 181 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
+#line 182 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
           
 
         IFileListEntry file;
@@ -236,8 +236,10 @@ using System.Threading.Tasks;
                 des.Estado = "No disponible";
 
                 context.SaveChanges();
+
+                Recargar();
             }
- 
+
         }
 
         protected override void OnInitialized()
@@ -263,11 +265,22 @@ using System.Threading.Tasks;
 
         }
 
+        public void Cerrar()
+        {
+            Recargar();
+        }
+
+        public void Recargar()
+        {
+            NavigationManager.NavigateTo("/");
+        }
+
     
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarArchivo cargarArchivo { get; set; }
     }
 }

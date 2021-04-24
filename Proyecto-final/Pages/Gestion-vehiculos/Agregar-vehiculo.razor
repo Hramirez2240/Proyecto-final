@@ -3,6 +3,7 @@
 @using Proyecto_final.Services
 @using System.Threading.Tasks
 @inject ICargarArchivo cargarArchivo
+@inject NavigationManager NavigationManager 
 
 <div class="container">
     <h1 style="text-align: center;" class="mt-2 col-md-12 pt-2 mb-4">Agregar vehiculos</h1>
@@ -56,7 +57,7 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-primary" @onclick="AgregarVehiculo">Agregar</button>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" @onclick="Cerrar">Cerrar</button>
                     @if (mensaje == 1)
                     {
                         <div class="alert alert-success" role="alert">Vehículo agregado correctamente</div>
@@ -159,7 +160,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" @onclick="GuardarCambios">Guardar cambios</button>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" @onclick="Cerrar">Cerrar</button>
                                     @if (mensaje == 1)
                                     {
                                         <div class="alert alert-success" role="alert">Cambios realizados correctamente</div>
@@ -295,8 +296,10 @@
                 des.Estado = "No disponible";
 
                 context.SaveChanges();
+
+                Recargar();
             }
- 
+
         }
 
         protected override void OnInitialized()
@@ -320,6 +323,16 @@
             latitud = "";
             longitud = "";
 
+        }
+
+        public void Cerrar()
+        {
+            Recargar();
+        }
+
+        public void Recargar()
+        {
+            NavigationManager.NavigateTo("/");
         }
 
     }
