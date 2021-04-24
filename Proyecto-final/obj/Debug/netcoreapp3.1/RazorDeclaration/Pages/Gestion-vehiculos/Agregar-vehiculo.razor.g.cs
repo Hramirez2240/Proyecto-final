@@ -272,7 +272,7 @@ using System.Threading.Tasks;
 
         public void Recargar()
         {
-            NavigationManager.NavigateTo("/");
+            NavigationManager.NavigateTo("/agregar-vehiculo", true);
         }
 
     
