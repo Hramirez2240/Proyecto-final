@@ -10,112 +10,112 @@ namespace Proyecto_final.Pages.Gestion_Clientes
     using System;
     using System.Collections.Generic;
 #nullable restore
-#line 2 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 2 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 3 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 4 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 5 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 6 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 7 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 8 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using Proyecto_final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 9 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using Proyecto_final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 10 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 11 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
 using System.IO;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+#line 2 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
 using Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+#line 3 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
 using Proyecto_final.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+#line 4 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
 using System.Threading.Tasks;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+#line 5 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+#line 6 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
 using System.Linq;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+#line 7 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
@@ -130,7 +130,7 @@ using Microsoft.AspNetCore.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 96 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+#line 143 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
       
     Data.DatosCedula dc = new Data.DatosCedula();
     IFileListEntry file;
@@ -185,10 +185,65 @@ using Microsoft.AspNetCore.Components;
         ft1 = Cd.foto;
 
     }
+    public void Editar(int id)
+    {
+        using (db_a72daa_proyecContext contexto = new db_a72daa_proyecContext())
+        {
+            var datos = contexto.Cliente.Find(id);
+            cedula = datos.Cedula;
+            nombre = datos.Nombre;
+            Apellido = datos.Apellido;
+            licencia = datos.Licencia;
+            nacionalidad = datos.Nacionalidad;
+            correo = datos.Correo;
+            sangre = datos.Sangre;
+            
+
+
+        }
+    }
+    public void GuardarCambios()
+    {
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            Cliente ve = context.Cliente
+            .Where(e => e.Cedula == cedula)
+            .FirstOrDefault();
+
+            ve.Cedula = cedula;
+            ve.Nombre = nombre;
+            ve.Apellido = Apellido;
+            ve.Nacionalidad = nacionalidad;
+            ve.Correo = correo;
+            ve.Sangre = sangre;
+            ve.Licencia = licencia;
+           
+
+            context.SaveChanges();
+        }
+
+        Limpiar();
+        mensaje = 1;
+    }
+
 
     protected override void OnInitialized()
     {
         lista_cliente = GetCliente();
+    }
+
+    public void Limpiar()
+    {
+        cedula = "";
+        Apellido = "";
+        nombre = "";
+        correo = "";
+        licencia = "";
+        nacionalidad = "";
+        sangre = "";
+        ft1 = "";
+        ft2 = "";
+
     }
 
 
