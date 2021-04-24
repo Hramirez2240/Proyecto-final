@@ -130,7 +130,7 @@ using Microsoft.AspNetCore.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 96 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+#line 143 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
       
     Data.DatosCedula dc = new Data.DatosCedula();
     IFileListEntry file;
@@ -185,10 +185,64 @@ using Microsoft.AspNetCore.Components;
         ft1 = Cd.foto;
 
     }
+    public void Editar(int id)
+    {
+        using (db_a72daa_proyecContext contexto = new db_a72daa_proyecContext())
+        {
+            var datos = contexto.Cliente.Find(id);
+            cedula = datos.Cedula;
+            nombre = datos.Nombre;
+            Apellido = datos.Apellido;
+            licencia = datos.Licencia;
+            nacionalidad = datos.Nacionalidad;
+            correo = datos.Correo;
+            sangre = datos.Sangre;
+            
+
+
+        }
+    }
+    public void GuardarCambios()
+    {
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            Cliente ve = context.Cliente
+            .Where(e => e.Cedula == cedula).FirstOrDefault();
+
+            ve.Cedula = cedula;
+            ve.Nombre = nombre;
+            ve.Apellido = Apellido;
+            ve.Nacionalidad = nacionalidad;
+            ve.Correo = correo;
+            ve.Sangre = sangre;
+            ve.Licencia = licencia;
+           
+
+            context.SaveChanges();
+        }
+
+        Limpiar();
+        mensaje = 1;
+    }
+
 
     protected override void OnInitialized()
     {
         lista_cliente = GetCliente();
+    }
+
+    public void Limpiar()
+    {
+        cedula = "";
+        Apellido = "";
+        nombre = "";
+        correo = "";
+        licencia = "";
+        nacionalidad = "";
+        sangre = "";
+        ft1 = "";
+        ft2 = "";
+
     }
 
 

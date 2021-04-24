@@ -21,6 +21,7 @@ namespace Proyecto_final.Models
 
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<Reservas> Reservas { get; set; }
+        public virtual DbSet<Usuarios> Usuarios { get; set; }
         public virtual DbSet<Vehiculos> Vehiculos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -118,6 +119,21 @@ namespace Proyecto_final.Models
                     .HasCollation("utf8mb4_0900_ai_ci");
 
                 entity.Property(e => e.Vehiculo)
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_0900_ai_ci");
+            });
+
+            modelBuilder.Entity<Usuarios>(entity =>
+            {
+                entity.ToTable("usuarios");
+
+                entity.Property(e => e.Contraseña)
+                    .HasColumnType("varchar(50)")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_0900_ai_ci");
+
+                entity.Property(e => e.Usuario)
                     .HasColumnType("varchar(50)")
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_0900_ai_ci");

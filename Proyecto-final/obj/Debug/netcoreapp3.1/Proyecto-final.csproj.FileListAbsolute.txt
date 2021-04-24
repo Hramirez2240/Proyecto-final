@@ -768,3 +768,5 @@ C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proye
 >>>>>>> 8bb5dc7840402971ea995356260f8cf9412a2d14
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
+C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
+C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs

@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Proyecto_final.Shared
+namespace Proyecto_final.Pages.Administracion_de_Usuarios
 {
     #line hidden
     using System;
@@ -89,7 +89,7 @@ using System.IO;
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : LayoutComponentBase
+    public partial class Agregar_usuario : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)

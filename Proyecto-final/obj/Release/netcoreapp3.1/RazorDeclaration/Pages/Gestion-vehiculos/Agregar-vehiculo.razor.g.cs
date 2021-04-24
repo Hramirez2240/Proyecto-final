@@ -118,7 +118,7 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 160 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
+#line 182 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
           
 
         IFileListEntry file;
@@ -137,7 +137,8 @@ using System.Threading.Tasks;
         string tipo = "", capacidad = "", pasajeros = "", matricula = "", num_seguro = "";
         string foto = "", latitud = "", longitud = "";
 
-        int mensaje = 0;
+        int mensaje = 0, deshabilitar = 0;
+        bool validar;
 
         public List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
         public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.OrderByDescending(ee => ee.Id).ToList();
@@ -146,27 +147,37 @@ using System.Threading.Tasks;
         {
             using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
             {
-                Vehiculos ve = new Vehiculos();
-                ve.Marca = marca;
-                ve.Modelo = modelo;
-                ve.Anio = anio;
-                ve.Color = color;
-                ve.PrecioDia = precio_dia;
-                ve.Tipo = tipo;
-                ve.Capacidad = capacidad;
-                ve.Pasajeros = pasajeros;
-                ve.Matricula = matricula;
-                ve.NumSeguro = num_seguro;
-                ve.Foto = file.Name;
-                ve.Latitud = latitud;
-                ve.Longitud = longitud;
+                validar = context.Vehiculos.Any(ee => ee.Matricula == matricula);
+                if (validar)
+                {
+                    mensaje = 2;
+                }
 
-                context.Add(ve);
-                context.SaveChanges();
+                else
+                {
+                    Vehiculos ve = new Vehiculos();
+                    ve.Marca = marca;
+                    ve.Modelo = modelo;
+                    ve.Anio = anio;
+                    ve.Color = color;
+                    ve.PrecioDia = precio_dia;
+                    ve.Tipo = tipo;
+                    ve.Capacidad = capacidad;
+                    ve.Pasajeros = pasajeros;
+                    ve.Matricula = matricula;
+                    ve.NumSeguro = num_seguro;
+                    ve.Foto = file.Name;
+                    ve.Latitud = latitud;
+                    ve.Longitud = longitud;
+
+                    context.Add(ve);
+                    context.SaveChanges();
+
+                    Limpiar();
+                    mensaje = 1;
+                }
+
             }
-
-            Limpiar();
-            mensaje = 1;
         }
 
         public void Editar(int id)
@@ -184,10 +195,51 @@ using System.Threading.Tasks;
                 pasajeros = datos.Pasajeros;
                 matricula = datos.Matricula;
                 num_seguro = datos.NumSeguro;
-                foto = datos.Foto;
                 latitud = datos.Latitud;
                 longitud = datos.Longitud;
             }
+        }
+
+        public void GuardarCambios()
+        {
+            using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+            {
+                Vehiculos ve = context.Vehiculos
+                .Where(e => e.Matricula == matricula)
+                .FirstOrDefault();
+
+                ve.Marca = marca;
+                ve.Modelo = modelo;
+                ve.Anio = anio;
+                ve.Color = color;
+                ve.PrecioDia = precio_dia;
+                ve.Tipo = tipo;
+                ve.Capacidad = capacidad;
+                ve.Pasajeros = pasajeros;
+                ve.Matricula = matricula;
+                ve.NumSeguro = num_seguro;
+                ve.Latitud = latitud;
+                ve.Longitud = longitud;
+
+                context.SaveChanges();
+            }
+
+            Limpiar();
+            mensaje = 1;
+        }
+
+        public void Deshabilitar(int id)
+        {
+            using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+            {
+                var des = context.Vehiculos.Find(id);
+                des.Estado = "No disponible";
+
+                context.SaveChanges();
+
+                Recargar();
+            }
+
         }
 
         protected override void OnInitialized()
@@ -213,11 +265,22 @@ using System.Threading.Tasks;
 
         }
 
+        public void Cerrar()
+        {
+            Recargar();
+        }
+
+        public void Recargar()
+        {
+            NavigationManager.NavigateTo("/agregar-vehiculo", true);
+        }
+
     
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarArchivo cargarArchivo { get; set; }
     }
 }
