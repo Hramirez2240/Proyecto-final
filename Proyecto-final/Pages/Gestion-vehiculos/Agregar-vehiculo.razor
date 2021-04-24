@@ -79,9 +79,19 @@
     {
         @foreach (var ve in lista_vehiculos)
         {
-            <div class="card" style="width: 20rem; height: 35rem;">
+            <div class="card" style="width: 20rem; height: 40rem;">
                 <img src="./imagenes/@ve.Foto" class="card-img-top">
                 <div class="card-body">
+                    @if (ve.Estado == "Disponible")
+                    {
+                        <h5 class="card-title" style="color: green;">Disponible</h5>
+                    }
+
+                    else if (ve.Estado == "No disponible")
+                    {
+                        <h5 class="card-title" style="color: red;">No disponible</h5>
+                    }
+
                     <label><strong>Marca: </strong>@ve.Marca</label>
                     <label><strong>Modelo: </strong>@ve.Modelo</label>
                     <label><strong>Año: </strong>@ve.Anio</label>
@@ -95,9 +105,19 @@
                     <label><strong>Latitud: </strong>@ve.Latitud</label>
                     <label><strong>Longitud: </strong>@ve.Longitud</label>
                     <br>
+                    @if (ve.Estado == "Disponible")
+                    {
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2" @onclick="(() => Editar(ve.Id))">
                         Editar
                     </button>
+                    }
+
+                    else if (ve.Estado == "No disponible")
+                    {
+                    <button disabled type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2" @onclick="(() => Editar(ve.Id))">
+                        Editar
+                    </button>
+                    }
 
                     <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
                         <div class="modal-dialog">
@@ -149,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-danger">Deshabilitar</button>
+                    <button class="btn btn-danger" @onclick="(() => Deshabilitar(ve.Id))">Deshabilitar</button>
                 </div>
             </div>
         }
@@ -176,7 +196,7 @@
         string tipo = "", capacidad = "", pasajeros = "", matricula = "", num_seguro = "";
         string foto = "", latitud = "", longitud = "";
 
-        int mensaje = 0;
+        int mensaje = 0, deshabilitar = 0;
         bool validar;
 
         public List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
@@ -257,7 +277,6 @@
                 ve.Pasajeros = pasajeros;
                 ve.Matricula = matricula;
                 ve.NumSeguro = num_seguro;
-                //ve.Foto = foto;
                 ve.Latitud = latitud;
                 ve.Longitud = longitud;
 
@@ -266,6 +285,18 @@
 
             Limpiar();
             mensaje = 1;
+        }
+
+        public void Deshabilitar(int id)
+        {
+            using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+            {
+                var des = context.Vehiculos.Find(id);
+                des.Estado = "No disponible";
+
+                context.SaveChanges();
+            }
+ 
         }
 
         protected override void OnInitialized()

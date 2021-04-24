@@ -118,7 +118,7 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 161 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
+#line 181 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
           
 
         IFileListEntry file;
@@ -137,7 +137,7 @@ using System.Threading.Tasks;
         string tipo = "", capacidad = "", pasajeros = "", matricula = "", num_seguro = "";
         string foto = "", latitud = "", longitud = "";
 
-        int mensaje = 0;
+        int mensaje = 0, deshabilitar = 0;
         bool validar;
 
         public List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
@@ -218,7 +218,6 @@ using System.Threading.Tasks;
                 ve.Pasajeros = pasajeros;
                 ve.Matricula = matricula;
                 ve.NumSeguro = num_seguro;
-                //ve.Foto = foto;
                 ve.Latitud = latitud;
                 ve.Longitud = longitud;
 
@@ -227,6 +226,18 @@ using System.Threading.Tasks;
 
             Limpiar();
             mensaje = 1;
+        }
+
+        public void Deshabilitar(int id)
+        {
+            using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+            {
+                var des = context.Vehiculos.Find(id);
+                des.Estado = "No disponible";
+
+                context.SaveChanges();
+            }
+ 
         }
 
         protected override void OnInitialized()
