@@ -118,7 +118,11 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
+<<<<<<< HEAD
 #line 161 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
+=======
+#line 182 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor"
+>>>>>>> 291de3a934dc0db73f22ff4b3715c32e2501452a
           
 
         IFileListEntry file;
@@ -137,7 +141,7 @@ using System.Threading.Tasks;
         string tipo = "", capacidad = "", pasajeros = "", matricula = "", num_seguro = "";
         string foto = "", latitud = "", longitud = "";
 
-        int mensaje = 0;
+        int mensaje = 0, deshabilitar = 0;
         bool validar;
 
         public List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
@@ -218,7 +222,6 @@ using System.Threading.Tasks;
                 ve.Pasajeros = pasajeros;
                 ve.Matricula = matricula;
                 ve.NumSeguro = num_seguro;
-                //ve.Foto = foto;
                 ve.Latitud = latitud;
                 ve.Longitud = longitud;
 
@@ -227,6 +230,20 @@ using System.Threading.Tasks;
 
             Limpiar();
             mensaje = 1;
+        }
+
+        public void Deshabilitar(int id)
+        {
+            using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+            {
+                var des = context.Vehiculos.Find(id);
+                des.Estado = "No disponible";
+
+                context.SaveChanges();
+
+                Recargar();
+            }
+
         }
 
         protected override void OnInitialized()
@@ -252,11 +269,22 @@ using System.Threading.Tasks;
 
         }
 
+        public void Cerrar()
+        {
+            Recargar();
+        }
+
+        public void Recargar()
+        {
+            NavigationManager.NavigateTo("/");
+        }
+
     
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarArchivo cargarArchivo { get; set; }
     }
 }
