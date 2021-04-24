@@ -557,7 +557,6 @@ C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\P
 C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Beneficios.razor.g.cs
 C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Deudores.razor.g.cs
 C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Mapa.razor.g.cs
-<<<<<<< HEAD
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Beneficios.razor.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Deudores.razor.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Mapa.razor.g.cs
@@ -566,7 +565,6 @@ C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Raz
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Deudores.razor.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Mapa.razor.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Vehiculos.razor.g.cs
-=======
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Beneficios.razor.g.cs
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Deudores.razor.g.cs
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Mapa.razor.g.cs
@@ -768,3 +766,5 @@ C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\net
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
 C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
 >>>>>>> 8bb5dc7840402971ea995356260f8cf9412a2d14
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs

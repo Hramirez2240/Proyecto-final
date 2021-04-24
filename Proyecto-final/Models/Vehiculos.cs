@@ -23,5 +23,6 @@ namespace Proyecto_final.Models
         public string Foto { get; set; }
         public string Latitud { get; set; }
         public string Longitud { get; set; }
+        public string Estado { get; set; }
     }
 }

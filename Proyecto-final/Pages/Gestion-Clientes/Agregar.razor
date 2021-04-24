@@ -97,14 +97,13 @@
                                 </div>
                                 <div class="modal-body">
                                     <input type="text" placeholder="Cedula" @bind="cedula" class="form-control" />
-                                    <button class="btn btn-primary" @onclick="buscar"> Buscar Cliente </button>
                                     <input type="text" placeholder="Nombre:" @bind="nombre" class="form-control" />
                                     <input type="text" placeholder="Apellido:" @bind="Apellido" class="form-control" />
-                                    <BlazorInputFile.InputFile OnChange="HandleFileSelected" multiple accept=".jpg, .jpeg, .png" />
-                                    <input type="text" @bind="ft1" class="form-control" />
                                     <input type="text" placeholder="Nacionalidad:" @bind="nacionalidad" class="form-control" />
                                     <input type="text" placeholder="Correo" @bind="correo" class="form-control" />
-                                    
+                                    <input type="text" placeholder="Correo" @bind="licencia" class="form-control" />
+
+
                                     <select @bind="sangre" class="form-control">
                                         <option value="" disabled selected hidden>Tipo de sangre</option>
                                         <option value="A+">A+</option>
@@ -120,12 +119,13 @@
 
                                 </div>
                                 <div class="modal-footer">
-                                    <button class="btn btn-primary">Guardar cambios</button>
+                                    <button class="btn btn-primary" @onclick="GuardarCambios">Guardar cambios</button>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                                     @if (mensaje == 1)
                                     {
                                         <div class="alert alert-success" role="alert">Cambios realizados correctamente</div>
                                     }
+
                                 </div>
                             </div>
                         </div>
@@ -206,11 +206,32 @@
             nacionalidad = datos.Nacionalidad;
             correo = datos.Correo;
             sangre = datos.Sangre;
-            ft1 = datos.Ft1;
-            ft2 = datos.Ft2;
+            
 
 
         }
+    }
+    public void GuardarCambios()
+    {
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            Cliente ve = context.Cliente
+            .Where(e => e.Cedula == cedula).FirstOrDefault();
+
+            ve.Cedula = cedula;
+            ve.Nombre = nombre;
+            ve.Apellido = Apellido;
+            ve.Nacionalidad = nacionalidad;
+            ve.Correo = correo;
+            ve.Sangre = sangre;
+            ve.Licencia = licencia;
+           
+
+            context.SaveChanges();
+        }
+
+        Limpiar();
+        mensaje = 1;
     }
 
 

@@ -197,11 +197,33 @@ using Microsoft.AspNetCore.Components;
             nacionalidad = datos.Nacionalidad;
             correo = datos.Correo;
             sangre = datos.Sangre;
-            ft1 = datos.Ft1;
-            ft2 = datos.Ft2;
+            
 
 
         }
+    }
+    public void GuardarCambios()
+    {
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            Cliente ve = context.Cliente
+            .Where(e => e.Cedula == cedula)
+            .FirstOrDefault();
+
+            ve.Cedula = cedula;
+            ve.Nombre = nombre;
+            ve.Apellido = Apellido;
+            ve.Nacionalidad = nacionalidad;
+            ve.Correo = correo;
+            ve.Sangre = sangre;
+            ve.Licencia = licencia;
+           
+
+            context.SaveChanges();
+        }
+
+        Limpiar();
+        mensaje = 1;
     }
 
 

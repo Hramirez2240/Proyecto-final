@@ -145,6 +145,13 @@ namespace Proyecto_final.Models
                     .HasCharSet("utf8mb4")
                     .HasCollation("utf8mb4_0900_ai_ci");
 
+                entity.Property(e => e.Estado)
+                    .IsRequired()
+                    .HasColumnType("varchar(50)")
+                    .HasDefaultValueSql("'Disponible'")
+                    .HasCharSet("utf8mb4")
+                    .HasCollation("utf8mb4_0900_ai_ci");
+
                 entity.Property(e => e.Foto)
                     .IsRequired()
                     .HasColumnType("varchar(100)")
