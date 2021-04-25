@@ -10,85 +10,106 @@ namespace Proyecto_final.Pages
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 1 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 2 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 3 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 4 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 5 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 6 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 7 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 8 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using Proyecto_final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 9 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using Proyecto_final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 10 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 11 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
 using System.IO;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+using Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+using Proyecto_final.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+using System.Threading.Tasks;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(LoginLayout))]
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -97,6 +118,174 @@ using System.IO;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 123 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+      
+    int numero1 = 0;
+	int campo = 0;
+	int campo1 = 0;
+	int prueba = 15;
+	int baseDatos = 0;
+	int baseDatos1 = 0;
+	string Usuario ="";
+	string Clave = "";
+	
+
+
+
+
+ 
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 137 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+                                                        
+	public void Registrate(){
+
+		if(Usuario.Length > 4 ){
+				campo = 1;
+		}else if(Usuario.Length == 0 ){
+				campo = 2;
+		}else if(Usuario.Length < 4){
+				campo = 3;
+		}
+
+		if(Clave.Length > 4 ){
+				campo1 = 1;
+		}else if(Clave.Length == 0 ){
+				campo1 = 2;
+		}else if(Clave.Length < 8){
+				campo1 = 3;
+		}
+
+		if(campo == 1){
+			if(campo1 == 1){
+					if(ValidarBase()){
+						if(AgregarUsuarioLogin()){
+							NavigationManager.NavigateTo("/", true);
+
+						}
+					}
+				
+			}
+			 
+		}
+	}
+	
+
+
+	
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 172 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+                                                                                
+		public void validarUsuario(){
+			if(Usuario.Length > 0){
+				if(Clave.Length > 0){
+						if(Validar()){
+							NavigationManager.NavigateTo("/agregar-vehiculo", true);
+						}
+				}else{
+					campo1 = 2;
+				}
+			}else{
+				campo = 2;
+			}
+		}
+
+
+    
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 188 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+                                       
+	public 	Boolean  AgregarUsuarioLogin()
+    {
+		bool f = false;
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            Usuarios u = new Usuarios();
+            
+				u.Usuario = Usuario;
+				u.Contraseña = Clave;
+
+            context.Add(u);
+            context.SaveChanges();
+			f = true;
+        }
+
+        return f;
+    }
+
+
+    
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 208 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+                                                                     
+	public 	Boolean  Validar()
+    {
+		bool f;
+		bool ff;
+		bool t = true;
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            f = context.Usuarios.Any(ee => ee.Usuario == Usuario);
+			ff = context.Usuarios.Any(ee => ee.Contraseña == Clave);
+
+			if(f){
+				if(ff){
+				  t = true;
+				}else{
+					baseDatos1 = 5;
+					t = false;
+				}
+			}else{
+				baseDatos = 5;
+				t = false;
+			}
+        }
+
+		return t;
+    }
+
+	public 	Boolean  ValidarBase()
+    {
+		bool b;
+		bool c = false;
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            b = context.Usuarios.Any(ee => ee.Usuario == Usuario);
+			if(b){
+				baseDatos = 8;
+				c = false;
+			}else{
+				c = true;
+			}
+        }
+
+		return c;
+    }
+
+
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarArchivo cargarArchivo { get; set; }
     }
 }
 #pragma warning restore 1591

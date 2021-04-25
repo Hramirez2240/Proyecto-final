@@ -1,7 +1,255 @@
 ﻿@page "/"
+@layout LoginLayout
+@using Models
+@using Proyecto_final.Services
+@using System.Threading.Tasks
+@inject ICargarArchivo cargarArchivo
+@inject NavigationManager  NavigationManager
 
-<h1>Hello, world!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V18</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="./images1/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./fonts1/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./fonts1/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="./vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="./vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./css1/util.css">
+	<link rel="stylesheet" type="text/css" href="./css1/main.css">
+<!--===============================================================================================-->
+</head>
+<body style="background-color: #fff;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
 
-Welcome to your new app.
+				<div class="login100-form validate-form">
+					<span class="login100-form-title p-b-43">
+						Bienvenido
+					</span>
+					
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" name="email"  @bind="Usuario" placeholder="Usuario">
+						<span class="focus-input100"></span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input"   >
+						<input class="input100" type="password" name="pass" placeholder="Clave"  @bind="Clave">
+						<span class="focus-input100"></span>
+					</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn"  @onclick="validarUsuario">
+                            Login
+						</button>
+                            <br><br><br>
+                        <button class="login100-form-btn" @onclick="Registrate">
+                            Registrate
+						</button>
+
+						<br><br><br>
+						
+							@if(campo == 2){
+						<div class="alert alert-danger" role="alert">
+  						Favor de ingresar un nombre de usuario.
+						</div>
+					}else if(campo == 3){
+						<div class="alert alert-danger" role="alert">
+  						Favor de ingresar un nombre mas largo
+						</div>
+					}else if(campo1 == 2){
+						<div class="alert alert-danger" role="alert">
+  						Favor de ingresar una contraseña.
+						</div>
+					}else if(campo1 == 3){
+						<div class="alert alert-danger" role="alert">
+  						Favor de ingresar una contraseña mayor a 8 digitos.
+						</div>
+					 //primero comentario	
+					}
+					else if(baseDatos == 5){
+						<div class="alert alert-danger" role="alert">
+  						Este usuario No existe en la base de datos. favor registrarse
+						</div>
+					}else if(baseDatos == 8){
+						<div class="alert alert-danger" role="alert">
+  						Este usuario ya existe en la base de datos.
+						</div>
+					}else if(baseDatos1 == 5){
+						//Para validar que tambien las contraseñas coincidan
+						<div class="alert alert-danger" role="alert">
+  						Favor validar el usuario o contraseña no coinciden.
+						</div>
+						
+					}else if(baseDatos1 == 8){
+						<div class="alert alert-danger" role="alert">
+  						Este usuario ya existe en la base de datos.
+						</div>
+					}
+					</div>
+
+				</div>
+
+				<div class="login100-more" style="background-image: url('./images1/bg-03.jpg');">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+	
+
+@code{
+    int numero1 = 0;
+	int campo = 0;
+	int campo1 = 0;
+	int prueba = 15;
+	int baseDatos = 0;
+	int baseDatos1 = 0;
+	string Usuario ="";
+	string Clave = "";
+	
+
+
+
+
+ @*Metodo validar los campos al momento de registrarse*@
+	public void Registrate(){
+
+		if(Usuario.Length > 4 ){
+				campo = 1;
+		}else if(Usuario.Length == 0 ){
+				campo = 2;
+		}else if(Usuario.Length < 4){
+				campo = 3;
+		}
+
+		if(Clave.Length > 4 ){
+				campo1 = 1;
+		}else if(Clave.Length == 0 ){
+				campo1 = 2;
+		}else if(Clave.Length < 8){
+				campo1 = 3;
+		}
+
+		if(campo == 1){
+			if(campo1 == 1){
+					if(ValidarBase()){
+						if(AgregarUsuarioLogin()){
+							NavigationManager.NavigateTo("/", true);
+
+						}
+					}
+				
+			}
+			 
+		}
+	}
+	
+
+
+	@*Metodo valida si los campos tienen datos y si existe en la base de datos*@
+		public void validarUsuario(){
+			if(Usuario.Length > 0){
+				if(Clave.Length > 0){
+						if(Validar()){
+							NavigationManager.NavigateTo("/agregar-vehiculo", true);
+						}
+				}else{
+					campo1 = 2;
+				}
+			}else{
+				campo = 2;
+			}
+		}
+
+
+    @*Metodo para Registrar los datos*@
+	public 	Boolean  AgregarUsuarioLogin()
+    {
+		bool f = false;
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            Usuarios u = new Usuarios();
+            
+				u.Usuario = Usuario;
+				u.Contraseña = Clave;
+
+            context.Add(u);
+            context.SaveChanges();
+			f = true;
+        }
+
+        return f;
+    }
+
+
+    @* Metodo para validar si el usuario existe en la base de datos*@
+	public 	Boolean  Validar()
+    {
+		bool f;
+		bool ff;
+		bool t = true;
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            f = context.Usuarios.Any(ee => ee.Usuario == Usuario);
+			ff = context.Usuarios.Any(ee => ee.Contraseña == Clave);
+
+			if(f){
+				if(ff){
+				  t = true;
+				}else{
+					baseDatos1 = 5;
+					t = false;
+				}
+			}else{
+				baseDatos = 5;
+				t = false;
+			}
+        }
+
+		return t;
+    }
+
+	public 	Boolean  ValidarBase()
+    {
+		bool b;
+		bool c = false;
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            b = context.Usuarios.Any(ee => ee.Usuario == Usuario);
+			if(b){
+				baseDatos = 8;
+				c = false;
+			}else{
+				c = true;
+			}
+        }
+
+		return c;
+    }
+
+
+
+}
