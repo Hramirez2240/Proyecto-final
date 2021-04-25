@@ -1,5 +1,121 @@
-﻿<h3>Agregar_Reserva</h3>
+﻿@page "/agregar-reserva"
+@using Models
+@using System.Net.Http;
+@using Microsoft.AspNetCore.Components;
+@inject HttpClient Http;
+@using System.Collections.Generic
+@using System.Linq
+
+
+<style>
+    #wa {
+        text-align: center;
+        border: solid;
+        border-color: navy; 
+        width: 50%;
+    }
+    #com {
+        margin-left: 77px;
+        width: 80%;
+    }
+    #combo {
+        width: 80%;
+    }
+</style>
+
+<h1 style="text-align: center;" class="mt-3 col-md-12 pt-2 mb-4">Modulo de reservas</h1>
+
+<div id="wa" class="container">
+    <h2 id="as" class="mt-2 col-md-12 pt-2 mb-4">Agregar reserva</h2>
+    <form>
+        <div class="row">
+            <div class="col">
+                <div id="com">
+                    <EditForm Model="cliente">
+                        <InputSelect @bind-Value="clientes" class="form-control">
+                            <option value="" disabled selected hidden>Seleccione al cliente</option>
+                            @foreach (var vacu in cliente)
+                            {
+                                <option style="color: black" value="@vacu.Nombre">@vacu.Nombre</option>
+                            }
+                        </InputSelect>
+                    </EditForm>
+                </div>
+
+                <input type="text" placeholder="Fecha de inicio de reserva" @bind-value="fechainicio" style="width: 80%; margin-left: 77px;" class="form-control" />
+            </div>
+            <div class="col">
+                <div id="combo">
+                    <EditForm Model="vehiculos">
+                        <InputSelect @bind-Value="vehiculo" class="form-control">
+                            <option value="" disabled selected hidden>Seleccione el vehiculo</option>
+                            @foreach (var vacu in vehiculos)
+                            {
+                                <option style="color: black" value="@vacu.Marca">@vacu.Marca</option>
+                            }
+                        </InputSelect>
+                    </EditForm>
+                </div>
+
+                <input type="text" placeholder="Fecha final de reserva" @bind-value="fechafin" style="width: 80%; margin-left: 0%" class="form-control" />
+            </div>
+        </div>
+    </form>
+
+    <button type="submit" class="btn btn-primary" style="width: 15%; margin-top: 20px; margin-bottom: 20px;" @onclick="Agregar">Agregar</button>
+
+    @if (mensaje == 1)
+    {
+        <div class="alert alert-success mt-2 mb-2" role="alert">Reserva Agregada Exitosamente</div>
+    }
+    @if (mensaje == 2)
+    {
+        <div class="alert alert-danger mt-2 mb-2 ml-3 mr-3" role="alert">En estos momentos este vehiculo no se encuentra disponible</div>
+    }
+</div>
 
 @code {
+
+    string clientes = "", vehiculo = "", fechainicio = "", fechafin = "";
+    int mensaje;
+    bool validar;
+
+    public List<Cliente> GetCliente() => new db_a72daa_proyecContext().Cliente.ToList();
+    public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
+    public List<Cliente> cliente;
+    public List<Vehiculos> vehiculos;
+
+    protected override void OnInitialized()
+    {
+        cliente = GetCliente();
+        vehiculos = GetVehiculos();
+    }
+
+    public void Agregar()
+    {
+        using (db_a72daa_proyecContext db = new db_a72daa_proyecContext())
+        {
+            Reservas re = new Reservas();
+            Vehiculos ve = new Vehiculos();
+
+            validar = db.Vehiculos.Any(ee => ee.Marca == vehiculo);
+            if(validar)
+            {
+                ve.Estado = "No disponible";
+                mensaje = 2;
+            }
+            else
+            {
+                re.Cliente = clientes;
+                re.Vehiculo = vehiculo;
+                re.FechaDeInicio = fechainicio;
+                re.FechaDeFin = fechafin;
+
+                db.Add(re);
+                db.SaveChanges();
+                mensaje = 1;
+            }
+        }
+    }
 
 }

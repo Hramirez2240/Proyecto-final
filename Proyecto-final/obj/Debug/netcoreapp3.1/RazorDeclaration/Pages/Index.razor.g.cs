@@ -12,161 +12,118 @@ namespace Proyecto_final.Pages
     using System.Linq;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-<<<<<<< HEAD
-#line 1 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 1 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 1 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 2 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 2 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 2 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 3 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 3 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 3 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 4 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 4 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 4 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 5 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 5 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 5 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 6 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 6 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 6 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 7 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 7 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 7 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 8 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 8 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 8 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Proyecto_final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 9 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 9 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 9 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Proyecto_final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 10 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 10 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 10 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 11 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 11 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+#line 11 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using System.IO;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 3 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
-using Models;
-=======
-#line 12 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 12 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Radzen;
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 4 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
-using Proyecto_final.Services;
-=======
-#line 13 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 13 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Radzen.Blazor;
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
 
 #line default
 #line hidden
 #nullable disable
-<<<<<<< HEAD
 #nullable restore
-#line 5 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+#line 3 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Index.razor"
+using Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Index.razor"
+using Proyecto_final.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Index.razor"
 using System.Threading.Tasks;
 
 #line default
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(LoginLayout))]
-=======
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -176,7 +133,7 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 123 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+#line 123 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Index.razor"
       
     int numero1 = 0;
 	int campo = 0;
@@ -197,7 +154,7 @@ using System.Threading.Tasks;
 #line hidden
 #nullable disable
 #nullable restore
-#line 137 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+#line 137 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Index.razor"
                                                         
 	public void Registrate(){
 
@@ -239,7 +196,7 @@ using System.Threading.Tasks;
 #line hidden
 #nullable disable
 #nullable restore
-#line 172 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+#line 172 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Index.razor"
                                                                                 
 		public void validarUsuario(){
 			if(Usuario.Length > 0){
@@ -262,7 +219,7 @@ using System.Threading.Tasks;
 #line hidden
 #nullable disable
 #nullable restore
-#line 188 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+#line 188 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Index.razor"
                                        
 	public 	Boolean  AgregarUsuarioLogin()
     {
@@ -289,7 +246,7 @@ using System.Threading.Tasks;
 #line hidden
 #nullable disable
 #nullable restore
-#line 208 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Index.razor"
+#line 208 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Index.razor"
                                                                      
 	public 	Boolean  Validar()
     {

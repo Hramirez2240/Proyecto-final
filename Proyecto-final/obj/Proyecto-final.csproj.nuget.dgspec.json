@@ -1,43 +1,21 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\One Piece\\Documents\\Final1\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj": {}
+    "C:\\Users\\User\\Desktop\\Programacion 3\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\One Piece\\Documents\\Final1\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj": {
+    "C:\\Users\\User\\Desktop\\Programacion 3\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\One Piece\\Documents\\Final1\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Programacion 3\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
         "projectName": "Proyecto-final",
-        "projectPath": "C:\\Users\\One Piece\\Documents\\Final1\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
-        "packagesPath": "C:\\Users\\One Piece\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\One Piece\\Documents\\Final1\\Proyecto-final\\Proyecto-final\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\One Piece\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-=======
-    "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
-        "projectName": "Proyecto-final",
-        "projectPath": "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
-        "packagesPath": "C:\\Users\\Ramirez Rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Programacion 3\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Programacion 3\\Proyecto-final\\Proyecto-final\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ramirez Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -133,11 +111,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
->>>>>>> d907b910a8da85e8a0661958fa87c69dc612cffb
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

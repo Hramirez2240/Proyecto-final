@@ -80,48 +80,63 @@ using System.IO;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-using Models;
+#line 12 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+using Radzen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+using Radzen.Blazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-using Proyecto_final.Services;
+using Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 4 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-using System.Threading.Tasks;
+using Proyecto_final.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 5 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-using System.Net.Http;
+using System.Threading.Tasks;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 6 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-using System.Linq;
+using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 7 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+using System.Linq;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/Agregar-cli")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Hola/Agregar-cli")]
     public partial class Agregar : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -130,7 +145,7 @@ using Microsoft.AspNetCore.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 143 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+#line 165 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
       
     Data.DatosCedula dc = new Data.DatosCedula();
     IFileListEntry file;
@@ -197,7 +212,7 @@ using Microsoft.AspNetCore.Components;
             nacionalidad = datos.Nacionalidad;
             correo = datos.Correo;
             sangre = datos.Sangre;
-            
+
 
 
         }
@@ -216,7 +231,7 @@ using Microsoft.AspNetCore.Components;
             ve.Correo = correo;
             ve.Sangre = sangre;
             ve.Licencia = licencia;
-           
+
 
             context.SaveChanges();
         }
@@ -246,9 +261,34 @@ using Microsoft.AspNetCore.Components;
     }
 
 
+    public void Deshabilitar(int id)
+    {
+        using (db_a72daa_proyecContext context = new db_a72daa_proyecContext())
+        {
+            var des = context.Cliente.Find(id);
+            des.Habilitar = "No disponible";
+
+            context.SaveChanges();
+
+            Recargar();
+        }
+
+    }
+    public void Cerrar()
+    {
+        Recargar();
+    }
+
+    public void Recargar()
+    {
+        NavigationManager.NavigateTo("/Agregar-cli", true);
+    }
+
+
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ICargarArchivo cargarArchivo { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient http { get; set; }
     }
