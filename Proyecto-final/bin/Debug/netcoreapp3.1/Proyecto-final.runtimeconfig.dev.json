@@ -1,9 +1,15 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\One Piece\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\One Piece\\.nuget\\packages",
       "C:\\Microsoft\\Xamarin\\NuGet"
+=======
+      "C:\\Users\\dhima\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\dhima\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
     ]
   }
 }

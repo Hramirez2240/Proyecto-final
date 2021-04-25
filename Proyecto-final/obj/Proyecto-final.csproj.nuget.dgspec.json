@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\One Piece\\Documents\\Final1\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj": {}
   },
   "projects": {
@@ -20,6 +21,27 @@
           "C:\\Users\\One Piece\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+=======
+    "C:\\Users\\dhima\\Desktop\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dhima\\Desktop\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dhima\\Desktop\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+        "projectName": "Proyecto-final",
+        "projectPath": "C:\\Users\\dhima\\Desktop\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+        "packagesPath": "C:\\Users\\dhima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dhima\\Desktop\\Proyecto-final\\Proyecto-final\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dhima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -115,7 +137,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
         }
       }
     }

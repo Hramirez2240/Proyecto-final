@@ -770,6 +770,7 @@ C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Raz
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
+<<<<<<< HEAD
 C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\bin\Debug\netcoreapp3.1\Proyecto-final.StaticWebAssets.xml
@@ -965,3 +966,19 @@ C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\obj\Debug\netc
 C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.genruntimeconfig.cache
 C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\LoginLayout.razor.g.cs
 C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\LoginLayout.razor.g.cs
+=======
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Administracion-de-Usuarios\Agregar-usuario.razor.g.cs
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Administracion-de-Usuarios\Agregar-usuario.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Administracion-de-Usuarios\Agregar-usuario.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Administracion-de-Usuarios\Agregar-usuario.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
+>>>>>>> 58da2ee80e209cb339267d6327e5a77958d123f2
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-vehiculos\Prueba.razor.g.cs
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-vehiculos\Prueba.razor.g.cs
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reporte\Prueba.razor.g.cs
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reporte\Prueba.razor.g.cs
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reporte\Vehiculos.razor.g.cs
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reporte\Reporte-Vehiculo.razor.g.cs
+C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reporte\Reporte-Vehiculo.razor.g.cs
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5

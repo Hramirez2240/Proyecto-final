@@ -13,78 +13,129 @@ namespace Proyecto_final.Pages.Gestion_Reportes
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
+<<<<<<< HEAD
 #line 1 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 1 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 2 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 2 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 3 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 3 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 4 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 4 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 5 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 5 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 6 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 6 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 7 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 7 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 8 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 8 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Proyecto_final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 9 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 9 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Proyecto_final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 10 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 10 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 11 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
+=======
+#line 11 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+>>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using System.IO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Reportes\Vehiculos.razor"
+using Models;
 
 #line default
 #line hidden
@@ -97,6 +148,21 @@ using System.IO;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 11 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Reportes\Vehiculos.razor"
+      
+     public List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
+    public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
+
+
+     protected override void OnInitialized()
+        {
+            lista_vehiculos = GetVehiculos();
+        }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
