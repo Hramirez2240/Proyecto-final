@@ -12,104 +12,118 @@ namespace Proyecto_final.Pages.Gestion_Reporte
     using System.Linq;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 1 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 2 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 3 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 4 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 5 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 6 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 7 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 8 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using Proyecto_final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 9 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using Proyecto_final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 10 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 11 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
 using System.IO;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Reporte-Vehiculo.razor"
+#line 12 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+using Radzen;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\_Imports.razor"
+using Radzen.Blazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Reporte-Vehiculo.razor"
 using Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Reporte-Vehiculo.razor"
+#line 3 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Reporte-Vehiculo.razor"
 using Proyecto_final.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Reporte-Vehiculo.razor"
+#line 4 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Reporte-Vehiculo.razor"
 using System.Threading.Tasks;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/prueba")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/reporte-vehiculos")]
     public partial class Reporte_Vehiculo : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -118,7 +132,7 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 27 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Reporte-Vehiculo.razor"
+#line 27 "C:\Users\Ramirez Rodriguez\Desktop\Héctor\Itla\Materias\Programación III\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Reporte-Vehiculo.razor"
        List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
 
             public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
