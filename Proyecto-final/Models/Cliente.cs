@@ -19,6 +19,6 @@ namespace Proyecto_final.Models
         public string Sangre { get; set; }
         public string Ft1 { get; set; }
         public string Ft2 { get; set; }
-        public bool? Habilitar { get; set; }
+        public string Habilitar { get; set; }
     }
 }

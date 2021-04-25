@@ -6,6 +6,7 @@
 @inject NavigationManager NavigationManager 
 
 <div class="container">
+    <a href="C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor">C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-vehiculos\Agregar-vehiculo.razor</a>
     <h1 style="text-align: center;" class="mt-2 col-md-12 pt-2 mb-4">Agregar vehiculos</h1>
     <br /><br />
     <button id="boton1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -76,105 +77,105 @@
     <hr>
 
     <div class="container" id="carta">
-    @if (lista_vehiculos != null)
-    {
-        @foreach (var ve in lista_vehiculos)
+        @if (lista_vehiculos != null)
         {
-            <div class="card" style="width: 20rem; height: 40rem;">
-                <img src="./imagenes/@ve.Foto" class="card-img-top">
-                <div class="card-body">
-                    @if (ve.Estado == "Disponible")
-                    {
-                        <h5 class="card-title" style="color: green;">Disponible</h5>
-                    }
+            @foreach (var ve in lista_vehiculos)
+            {
+                <div class="card" style="width: 20rem; height: 40rem;">
+                    <img src="./imagenes/@ve.Foto" class="card-img-top">
+                    <div class="card-body">
+                        @if (ve.Estado == "Disponible")
+                        {
+                            <h5 class="card-title" style="color: green;">Disponible</h5>
+                        }
 
-                    else if (ve.Estado == "No disponible")
-                    {
-                        <h5 class="card-title" style="color: red;">No disponible</h5>
-                    }
+                        else if (ve.Estado == "No disponible")
+                        {
+                            <h5 class="card-title" style="color: red;">No disponible</h5>
+                        }
 
-                    <label><strong>Marca: </strong>@ve.Marca</label>
-                    <label><strong>Modelo: </strong>@ve.Modelo</label>
-                    <label><strong>Año: </strong>@ve.Anio</label>
-                    <label><strong>Color: </strong>@ve.Color</label>
-                    <label><strong>Precio/dia: </strong>@ve.PrecioDia</label>
-                    <label><strong>Tipo: </strong>@ve.Tipo</label>
-                    <label><strong>Capacidad: </strong>@ve.Capacidad</label>
-                    <label><strong>Pasajeros: </strong>@ve.Pasajeros</label>
-                    <label><strong>Matricula: </strong>@ve.Matricula</label>
-                    <label><strong>Numero Seguro: </strong>@ve.NumSeguro</label>
-                    <label><strong>Latitud: </strong>@ve.Latitud</label>
-                    <label><strong>Longitud: </strong>@ve.Longitud</label>
-                    <br>
-                    @if (ve.Estado == "Disponible")
-                    {
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2" @onclick="(() => Editar(ve.Id))">
-                        Editar
-                    </button>
-                    }
+                        <label><strong>Marca: </strong>@ve.Marca</label>
+                        <label><strong>Modelo: </strong>@ve.Modelo</label>
+                        <label><strong>Año: </strong>@ve.Anio</label>
+                        <label><strong>Color: </strong>@ve.Color</label>
+                        <label><strong>Precio/dia: </strong>@ve.PrecioDia</label>
+                        <label><strong>Tipo: </strong>@ve.Tipo</label>
+                        <label><strong>Capacidad: </strong>@ve.Capacidad</label>
+                        <label><strong>Pasajeros: </strong>@ve.Pasajeros</label>
+                        <label><strong>Matricula: </strong>@ve.Matricula</label>
+                        <label><strong>Numero Seguro: </strong>@ve.NumSeguro</label>
+                        <label><strong>Latitud: </strong>@ve.Latitud</label>
+                        <label><strong>Longitud: </strong>@ve.Longitud</label>
+                        <br>
+                        @if (ve.Estado == "Disponible")
+                        {
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2" @onclick="(() => Editar(ve.Id))">
+                                Editar
+                            </button>
+                        }
 
-                    else if (ve.Estado == "No disponible")
-                    {
-                    <button disabled type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2" @onclick="(() => Editar(ve.Id))">
-                        Editar
-                    </button>
-                    }
+                        else if (ve.Estado == "No disponible")
+                        {
+                            <button disabled type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2" @onclick="(() => Editar(ve.Id))">
+                                Editar
+                            </button>
+                        }
 
-                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal2Label">Editando vehículo</h5>
-                                </div>
-                                <div class="modal-body">
-                                    <input type="text" placeholder="Marca:" @bind="marca" class="form-control" />
-                                    <input type="text" placeholder="Modelo:" @bind="modelo" class="form-control" />
-                                    <input type="text" placeholder="Año:" @bind="anio" class="form-control" />
-                                    <input type="text" placeholder="Color:" @bind="color" class="form-control" />
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" @bind="precio_dia" placeholder="Precio por día">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">.00</span>
-                                        </div>
+                        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal2Label">Editando vehículo</h5>
                                     </div>
-                                    <select @bind="tipo" class="form-control">
-                                        <option value="" disabled selected hidden>Tipo de transporte</option>
-                                        <option value="Motocicleta">Motocicleta</option>
-                                        <option value="Carro">Carro</option>
-                                        <option value="Camión">Camión</option>
-                                        <option value="Barco">Barco</option>
-                                        <option value="Avión">Avión</option>
-                                    </select>
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Capacidad carga:" aria-describedby="basic-addon2" @bind="capacidad">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">Kg</span>
+                                    <div class="modal-body">
+                                        <input type="text" placeholder="Marca:" @bind="marca" class="form-control" />
+                                        <input type="text" placeholder="Modelo:" @bind="modelo" class="form-control" />
+                                        <input type="text" placeholder="Año:" @bind="anio" class="form-control" />
+                                        <input type="text" placeholder="Color:" @bind="color" class="form-control" />
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" @bind="precio_dia" placeholder="Precio por día">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">.00</span>
+                                            </div>
                                         </div>
+                                        <select @bind="tipo" class="form-control">
+                                            <option value="" disabled selected hidden>Tipo de transporte</option>
+                                            <option value="Motocicleta">Motocicleta</option>
+                                            <option value="Carro">Carro</option>
+                                            <option value="Camión">Camión</option>
+                                            <option value="Barco">Barco</option>
+                                            <option value="Avión">Avión</option>
+                                        </select>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Capacidad carga:" aria-describedby="basic-addon2" @bind="capacidad">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Kg</span>
+                                            </div>
+                                        </div>
+                                        <input type="text" placeholder="Pasajeros:" @bind="pasajeros" class="form-control" />
+                                        <input type="text" placeholder="Matricula:" @bind="matricula" class="form-control" />
+                                        <input type="text" placeholder="Numero de seguro:" @bind="num_seguro" class="form-control" />
+                                        <input type="text" placeholder="Latitud:" @bind="latitud" class="form-control" />
+                                        <input type="text" placeholder="Longitud" @bind="longitud" class="form-control" />
+
                                     </div>
-                                    <input type="text" placeholder="Pasajeros:" @bind="pasajeros" class="form-control" />
-                                    <input type="text" placeholder="Matricula:" @bind="matricula" class="form-control" />
-                                    <input type="text" placeholder="Numero de seguro:" @bind="num_seguro" class="form-control" />
-                                    <input type="text" placeholder="Latitud:" @bind="latitud" class="form-control" />
-                                    <input type="text" placeholder="Longitud" @bind="longitud" class="form-control" />
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" @onclick="GuardarCambios">Guardar cambios</button>
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" @onclick="Cerrar">Cerrar</button>
+                                        @if (mensaje == 1)
+                                        {
+                                            <div class="alert alert-success" role="alert">Cambios realizados correctamente</div>
+                                        }
 
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-primary" @onclick="GuardarCambios">Guardar cambios</button>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" @onclick="Cerrar">Cerrar</button> 
-                                    @if (mensaje == 1)
-                                    {
-                                        <div class="alert alert-success" role="alert">Cambios realizados correctamente</div>
-                                    }
-
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="btn btn-danger" @onclick="(() => Deshabilitar(ve.Id))">Deshabilitar</button>
                     </div>
-                    <button class="btn btn-danger" @onclick="(() => Deshabilitar(ve.Id))">Deshabilitar</button>
                 </div>
-            </div>
+            }
         }
-    }
     </div>
 
 </div>
