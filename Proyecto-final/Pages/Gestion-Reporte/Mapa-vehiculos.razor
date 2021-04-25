@@ -1,0 +1,46 @@
+@page "/mapa-vehiculos"
+@using Proyecto_final.Models
+@using System.Linq
+
+<div class="container">
+    <h1 style="text-align: center; color: white; height: 65px" class="mt-2 col-md-12 mb-1 pt-2">Mostrar mapa de vehiculos</h1>
+</div>
+
+<RadzenGoogleMap Style="height: 600px;" Zoom="@zoom" Center="@(new GoogleMapPosition() { Lat = 18.735693, Lng = -70.162651})" MapClick="@OnMapClick" MarkerClick="OnMarkerClick">
+    <Markers>
+        @foreach (var vehi in GetVehiculos())
+        {
+            <RadzenGoogleMapMarker Title="@vehi.datos" Position="@(new GoogleMapPosition() { Lat = Convert.ToDouble(vehi.lat), Lng = Convert.ToDouble(vehi.lon)})" />
+        }
+    </Markers>
+</RadzenGoogleMap>
+
+@code{
+
+    int zoom = 3;
+    string click = "";
+
+    void OnMapClick(GoogleMapClickEventArgs args)
+    {
+
+        click = $"Map click lat: {args.Position.Lat} Lon: {args.Position.Lng}";
+    }
+
+    void OnMarkerClick(RadzenGoogleMapMarker args)
+    {
+
+        click = $"Map click provincia: {args.Title} lat: {args.Position.Lat} Lon: {args.Position.Lng}";
+    }
+
+    List<DataConsultaVehiculos> GetVehiculos() =>
+    (
+        from v in new db_a72daa_proyecContext().Vehiculos
+        select new DataConsultaVehiculos
+        {
+            datos = " Marca: " + v.Marca + " ,Modelo: " + v.Modelo + " ,Año: " + v.Anio + " ,Color: " + v.Color,
+            lat = v.Latitud,
+            lon = v.Longitud
+        }
+    ).ToList();
+
+}
