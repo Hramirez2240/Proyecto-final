@@ -10,176 +10,112 @@ namespace Proyecto_final.Pages.Gestion_Clientes
     using System;
     using System.Collections.Generic;
 #nullable restore
-<<<<<<< HEAD
 #line 2 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 2 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 3 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 3 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 4 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 4 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 5 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 5 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 6 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 6 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 7 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 7 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 8 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 8 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Proyecto_final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 9 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 9 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Proyecto_final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 10 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 10 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 11 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\_Imports.razor"
-=======
-#line 11 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\_Imports.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using System.IO;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 3 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-=======
-#line 2 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 4 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-=======
-#line 3 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Proyecto_final.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 5 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-=======
-#line 4 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using System.Threading.Tasks;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 6 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-=======
-#line 5 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 7 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-=======
-#line 6 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using System.Linq;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 8 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-=======
-#line 7 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
 using Microsoft.AspNetCore.Components;
 
 #line default
@@ -195,11 +131,7 @@ using Microsoft.AspNetCore.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-<<<<<<< HEAD
-#line 144 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
-=======
-#line 164 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
->>>>>>> c4577bc45cfad195dd34a0e154d849f6b494a4e5
+#line 165 "C:\Users\One Piece\Documents\Final1\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
       
     Data.DatosCedula dc = new Data.DatosCedula();
     IFileListEntry file;
