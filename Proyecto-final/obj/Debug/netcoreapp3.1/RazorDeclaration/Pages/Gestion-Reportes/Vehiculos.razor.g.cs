@@ -89,6 +89,14 @@ using System.IO;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Reportes\Vehiculos.razor"
+using Models;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/vehiculos")]
     public partial class Vehiculos : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -97,15 +105,15 @@ using System.IO;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 18 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Reportes\Vehiculos.razor"
+#line 11 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Reportes\Vehiculos.razor"
       
-     public List<Cliente> lista_cliente = new List<Cliente>();
-    public List<Cliente> GetClientes() => new db_a72daa_proyecContext().Cliente.ToList();
+     public List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
+    public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
 
 
      protected override void OnInitialized()
         {
-            lista_cliente = GetClientes();
+            lista_vehiculos = GetVehiculos();
         }
 
 #line default

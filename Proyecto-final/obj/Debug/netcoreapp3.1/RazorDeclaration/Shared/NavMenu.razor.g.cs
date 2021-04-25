@@ -97,7 +97,7 @@ using System.IO;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 59 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Shared\NavMenu.razor"
+#line 64 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
      private bool expandedSubMenu;

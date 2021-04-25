@@ -130,7 +130,7 @@ using Microsoft.AspNetCore.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 163 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
+#line 164 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Clientes\Agregar.razor"
       
     Data.DatosCedula dc = new Data.DatosCedula();
     IFileListEntry file;
