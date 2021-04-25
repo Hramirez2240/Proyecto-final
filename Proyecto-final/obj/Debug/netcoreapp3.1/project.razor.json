@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
+  "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Proyecto-final.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -45,6 +45,39 @@
         }
       },
       {
+        "HashCode": -600617063,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Administracion_de_Usuarios.Agregar_usuario",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Agregar_usuario"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Administracion_de_Usuarios.Agregar_usuario"
+        }
+      },
+      {
+        "HashCode": -1708373029,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Administracion_de_Usuarios.Agregar_usuario",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Administracion_de_Usuarios.Agregar_usuario"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Administracion_de_Usuarios.Agregar_usuario",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1969836486,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Gestion_Clientes.Agregar",
@@ -74,6 +107,171 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Pages.Gestion_Clientes.Agregar",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1937481526,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Gestion_Reportes.Beneficios",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Beneficios"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Gestion_Reportes.Beneficios"
+        }
+      },
+      {
+        "HashCode": -1204392991,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Gestion_Reportes.Beneficios",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Gestion_Reportes.Beneficios"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Gestion_Reportes.Beneficios",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1970107460,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Gestion_Reportes.Deudores",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Deudores"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Gestion_Reportes.Deudores"
+        }
+      },
+      {
+        "HashCode": 1745220350,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Gestion_Reportes.Deudores",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Gestion_Reportes.Deudores"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Gestion_Reportes.Deudores",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1623790040,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Gestion_Reportes.Mapa",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Mapa"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Gestion_Reportes.Mapa"
+        }
+      },
+      {
+        "HashCode": -1391615230,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Gestion_Reportes.Mapa",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Gestion_Reportes.Mapa"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Gestion_Reportes.Mapa",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1394095884,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Gestion_Reportes.Vehiculos",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Vehiculos"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Gestion_Reportes.Vehiculos"
+        }
+      },
+      {
+        "HashCode": 1504405255,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Gestion_Reportes.Vehiculos",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Gestion_Reportes.Vehiculos"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Gestion_Reportes.Vehiculos",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2022328522,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Gestion_Reserva.Agregar_Reserva",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Agregar_Reserva"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Gestion_Reserva.Agregar_Reserva"
+        }
+      },
+      {
+        "HashCode": -1272741077,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Gestion_Reserva.Agregar_Reserva",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Gestion_Reserva.Agregar_Reserva"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Gestion_Reserva.Agregar_Reserva",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -240,39 +438,6 @@
         }
       },
       {
-        "HashCode": 1769253342,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.NavMenu",
-        "AssemblyName": "Proyecto-final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 1961011309,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.NavMenu",
-        "AssemblyName": "Proyecto-final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -994925694,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Shared.SurveyPrompt",
@@ -322,6 +487,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1769253342,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.NavMenu",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": 1961011309,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.NavMenu",
+        "AssemblyName": "Proyecto-final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -58731,57 +58929,87 @@
   "RootNamespace": "Proyecto_final",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Pages\\Gestion-vehiculos\\Agregar-vehiculo.razor",
-      "TargetPath": "Pages\\Gestion-vehiculos\\Agregar-vehiculo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Shared\\NavMenu.razor",
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Shared\\NavMenu.razor",
       "TargetPath": "Shared\\NavMenu.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\Gestion-Reportes\\Deudores.razor",
+      "TargetPath": "Pages\\Gestion-Reportes\\Deudores.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Shared\\SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\Gestion-Reportes\\Vehiculos.razor",
+      "TargetPath": "Pages\\Gestion-Reportes\\Vehiculos.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\Gestion-Reportes\\Mapa.razor",
+      "TargetPath": "Pages\\Gestion-Reportes\\Mapa.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\Gestion-Reportes\\Beneficios.razor",
+      "TargetPath": "Pages\\Gestion-Reportes\\Beneficios.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\Administracion-de-Usuarios\\Agregar-usuario.razor",
+      "TargetPath": "Pages\\Administracion-de-Usuarios\\Agregar-usuario.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ramirez Rodriguez\\Desktop\\Héctor\\Itla\\Materias\\Programación III\\Proyecto-final\\Proyecto-final\\Pages\\Gestion-Clientes\\Agregar.razor",
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\Gestion-Reserva\\Agregar-Reserva.razor",
+      "TargetPath": "Pages\\Gestion-Reserva\\Agregar-Reserva.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\Gestion-vehiculos\\Agregar-vehiculo.razor",
+      "TargetPath": "Pages\\Gestion-vehiculos\\Agregar-vehiculo.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\2021\\Proyecto-final\\Proyecto-final\\Pages\\Gestion-Clientes\\Agregar.razor",
       "TargetPath": "Pages\\Gestion-Clientes\\Agregar.razor",
       "FileKind": "component"
     }

@@ -1,4 +1,9 @@
 ﻿<StaticWebAssets Version="1.0">
+<<<<<<< HEAD
   <ContentRoot BasePath="_content/BlazorInputFile" Path="C:\Users\dhima\.nuget\packages\blazorinputfile\0.2.0\build\..\staticwebassets\" />
   <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\dhima\.nuget\packages\radzen.blazor\3.2.3\build\..\staticwebassets\" />
+=======
+  <ContentRoot BasePath="_content/BlazorInputFile" Path="C:\Users\Andriel Castillo\.nuget\packages\blazorinputfile\0.2.0\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Radzen.Blazor" Path="C:\Users\Andriel Castillo\.nuget\packages\radzen.blazor\3.2.3\build\..\staticwebassets\" />
+>>>>>>> 58da2ee80e209cb339267d6327e5a77958d123f2
 </StaticWebAssets>

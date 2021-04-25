@@ -96,6 +96,21 @@ using System.IO;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 18 "C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\Pages\Gestion-Reportes\Vehiculos.razor"
+      
+     public List<Cliente> lista_cliente = new List<Cliente>();
+    public List<Cliente> GetClientes() => new db_a72daa_proyecContext().Cliente.ToList();
+
+
+     protected override void OnInitialized()
+        {
+            lista_cliente = GetClientes();
+        }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

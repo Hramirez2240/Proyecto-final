@@ -770,5 +770,12 @@ C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Raz
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
+<<<<<<< HEAD
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Administracion-de-Usuarios\Agregar-usuario.razor.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Administracion-de-Usuarios\Agregar-usuario.razor.g.cs
+=======
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Administracion-de-Usuarios\Agregar-usuario.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Administracion-de-Usuarios\Agregar-usuario.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reserva\Agregar-Reserva.razor.g.cs
+>>>>>>> 58da2ee80e209cb339267d6327e5a77958d123f2

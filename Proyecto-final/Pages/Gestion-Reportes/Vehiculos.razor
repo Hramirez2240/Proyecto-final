@@ -1,3 +1,28 @@
+<<<<<<< HEAD
 @*@page "/vehiculos"
 
 <h1 class="text-center">Listado de Vehículos</h1>*@
+=======
+@page "/vehiculos"
+@using Models
+
+<h1 class="text-center">Listado de Vehículos</h1>
+
+@foreach (var item in lista_cliente)
+{
+     <label><strong>Nombre: </strong>@item.Nombre</label>
+}
+
+
+
+@code{
+     public List<Cliente> lista_cliente = new List<Cliente>();
+    public List<Cliente> GetClientes() => new db_a72daa_proyecContext().Cliente.ToList();
+
+
+     protected override void OnInitialized()
+        {
+            lista_cliente = GetClientes();
+        }
+}
+>>>>>>> 58da2ee80e209cb339267d6327e5a77958d123f2
