@@ -111,7 +111,7 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 59 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Shared\NavMenu.razor"
+#line 64 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
      private bool expandedSubMenu;

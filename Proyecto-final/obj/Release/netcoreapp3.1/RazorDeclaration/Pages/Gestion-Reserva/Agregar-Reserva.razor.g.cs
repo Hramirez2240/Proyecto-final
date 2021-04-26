@@ -8,17 +8,7 @@ namespace Proyecto_final.Pages.Gestion_Reserva
 {
     #line hidden
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
     using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
-#nullable restore
-#line 1 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
-using System.Net.Http;
-
-#line default
-#line hidden
-#nullable disable
 #nullable restore
 #line 2 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
@@ -103,6 +93,42 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+using Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+using Microsoft.AspNetCore.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+using System.Collections.Generic;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+using System.Linq;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/agregar-reserva")]
     public partial class Agregar_Reserva : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -110,6 +136,100 @@ using Radzen.Blazor;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 134 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+       
+
+    string clientes = "", vehiculo = "", fechainicio = "", fechafin = "", esta = "";
+    string modelo = "", año = "", color = "", tipo = "", capacidad = "", pasajeros = "", matricula = "", numero_seguro = "", latitud = "", longitud = "", precio = "";
+    int mensaje;
+    bool validar;
+    string men;
+
+    public List<Cliente> GetCliente() => new db_a72daa_proyecContext().Cliente.ToList();
+    public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
+    public List<Cliente> cliente;
+    public List<Vehiculos> vehiculos = new List<Vehiculos>();
+
+    protected override void OnInitialized()
+    {
+        cliente = GetCliente();
+        vehiculos = GetVehiculos();
+    }
+
+    public void Agregar()
+    {
+        using (db_a72daa_proyecContext db = new db_a72daa_proyecContext())
+        {
+
+            validar = db.Vehiculos.Any(ee => ee.Marca == vehiculo);
+
+            if (validar)
+            {
+                Validacion(vehiculo);
+
+            }
+            
+        }
+    }
+
+    public void Validacion(string vehicu)
+    {
+        using (db_a72daa_proyecContext db = new db_a72daa_proyecContext())
+        {
+            foreach (var vario in vehiculos)
+            {
+                if (vario.Marca == vehicu)
+                {
+                    men = vario.Estado;
+                    modelo = vario.Modelo;
+                    año = vario.Anio;
+                    color = vario.Color;
+                    precio = vario.PrecioDia;
+                    tipo = vario.Tipo;
+                    capacidad = vario.Capacidad;
+                    pasajeros = vario.Pasajeros;
+                    matricula = vario.Matricula;
+                    numero_seguro = vario.NumSeguro;
+                    latitud = vario.Latitud;
+                    longitud = vario.Longitud;
+                }
+            }
+
+            Reservas re = new Reservas();
+
+            if (men == "Disponible")
+            {
+                re.Cliente = clientes;
+                re.Vehiculo = vehiculo;
+                re.FechaDeInicio = fechainicio;
+                re.FechaDeFin = fechafin;
+
+                db.Add(re);
+                db.SaveChanges();
+                mensaje = 1;
+
+
+            }
+            else
+            {
+                mensaje = 2;
+            }
+
+        }
+
+    }
+
+
+    public void Cerrar()
+    {
+
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

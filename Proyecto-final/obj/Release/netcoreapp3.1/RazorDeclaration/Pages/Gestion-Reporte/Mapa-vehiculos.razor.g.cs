@@ -125,7 +125,7 @@ using System.Linq;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 18 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Mapa-vehiculos.razor"
+#line 22 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Mapa-vehiculos.razor"
       
 
     int zoom = 3;

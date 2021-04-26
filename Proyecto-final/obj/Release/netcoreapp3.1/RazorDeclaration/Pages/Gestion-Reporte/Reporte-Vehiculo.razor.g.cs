@@ -132,15 +132,16 @@ using System.Threading.Tasks;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 27 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Reporte-Vehiculo.razor"
-       List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
+#line 32 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reporte\Reporte-Vehiculo.razor"
+      
+    List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
 
-            public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
+    public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
 
-            protected override void OnInitialized()
-            {
-                lista_vehiculos = GetVehiculos();
-            } 
+    protected override void OnInitialized()
+    {
+        lista_vehiculos = GetVehiculos();
+    }
 
 #line default
 #line hidden
