@@ -3,10 +3,10 @@
 @using System.Linq
 
 <div class="container">
-    <h1 style="text-align: center; color: white; height: 65px" class="mt-2 col-md-12 mb-1 pt-2">Mostrar mapa de vehiculos</h1>
+    <h1 style="text-align: center;  height: 65px" class="mt-2 col-md-12 mb-1 pt-2">Mostrar mapa de vehiculos</h1>
 </div>
 
-<RadzenGoogleMap Style="height: 600px;" Zoom="@zoom" Center="@(new GoogleMapPosition() { Lat = 18.735693, Lng = -70.162651})" MapClick="@OnMapClick" MarkerClick="OnMarkerClick">
+<RadzenGoogleMap Style="height: 800px;" Zoom="@zoom" Center="@(new GoogleMapPosition() { Lat = 18.735693, Lng = -70.162651})" MapClick="@OnMapClick" MarkerClick="OnMarkerClick">
     <Markers>
         @foreach (var vehi in GetVehiculos())
         {
