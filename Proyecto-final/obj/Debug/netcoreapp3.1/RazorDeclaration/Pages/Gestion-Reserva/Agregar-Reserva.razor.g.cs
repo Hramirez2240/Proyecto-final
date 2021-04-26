@@ -10,119 +10,119 @@ namespace Proyecto_final.Pages.Gestion_Reserva
     using System;
     using System.Threading.Tasks;
 #nullable restore
-#line 2 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 2 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 3 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 4 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 5 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 6 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 7 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 8 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using Proyecto_final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 9 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using Proyecto_final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 10 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 11 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using System.IO;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 12 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using Radzen;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\_Imports.razor"
+#line 13 "C:\2021\Proyecto-final\Proyecto-final\_Imports.razor"
 using Radzen.Blazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+#line 2 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
 using Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+#line 3 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+#line 4 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
 using Microsoft.AspNetCore.Components;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+#line 6 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
 using System.Collections.Generic;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+#line 7 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
 using System.Linq;
 
 #line default
@@ -137,17 +137,19 @@ using System.Linq;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 77 "C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
+#line 134 "C:\2021\Proyecto-final\Proyecto-final\Pages\Gestion-Reserva\Agregar-Reserva.razor"
        
 
-    string clientes = "", vehiculo = "", fechainicio = "", fechafin = "";
+    string clientes = "", vehiculo = "", fechainicio = "", fechafin = "", esta = "";
+    string modelo = "", año = "", color = "", tipo = "", capacidad = "", pasajeros = "", matricula = "", numero_seguro = "", latitud = "", longitud = "", precio = "";
     int mensaje;
     bool validar;
+    string men;
 
     public List<Cliente> GetCliente() => new db_a72daa_proyecContext().Cliente.ToList();
     public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
     public List<Cliente> cliente;
-    public List<Vehiculos> vehiculos;
+    public List<Vehiculos> vehiculos = new List<Vehiculos>();
 
     protected override void OnInitialized()
     {
@@ -159,16 +161,44 @@ using System.Linq;
     {
         using (db_a72daa_proyecContext db = new db_a72daa_proyecContext())
         {
-            Reservas re = new Reservas();
-            Vehiculos ve = new Vehiculos();
 
             validar = db.Vehiculos.Any(ee => ee.Marca == vehiculo);
-            if(validar)
+
+            if (validar)
             {
-                ve.Estado = "No disponible";
-                mensaje = 2;
+                Validacion(vehiculo);
+
             }
-            else
+            
+        }
+    }
+
+    public void Validacion(string vehicu)
+    {
+        using (db_a72daa_proyecContext db = new db_a72daa_proyecContext())
+        {
+            foreach (var vario in vehiculos)
+            {
+                if (vario.Marca == vehicu)
+                {
+                    men = vario.Estado;
+                    modelo = vario.Modelo;
+                    año = vario.Anio;
+                    color = vario.Color;
+                    precio = vario.PrecioDia;
+                    tipo = vario.Tipo;
+                    capacidad = vario.Capacidad;
+                    pasajeros = vario.Pasajeros;
+                    matricula = vario.Matricula;
+                    numero_seguro = vario.NumSeguro;
+                    latitud = vario.Latitud;
+                    longitud = vario.Longitud;
+                }
+            }
+
+            Reservas re = new Reservas();
+
+            if (men == "Disponible")
             {
                 re.Cliente = clientes;
                 re.Vehiculo = vehiculo;
@@ -178,10 +208,23 @@ using System.Linq;
                 db.Add(re);
                 db.SaveChanges();
                 mensaje = 1;
+
+
             }
+            else
+            {
+                mensaje = 2;
+            }
+
         }
+
     }
 
+
+    public void Cerrar()
+    {
+
+    }
 
 #line default
 #line hidden

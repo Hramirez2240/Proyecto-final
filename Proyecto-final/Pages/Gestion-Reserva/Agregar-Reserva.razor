@@ -11,13 +11,15 @@
     #wa {
         text-align: center;
         border: solid;
-        border-color: navy; 
+        border-color: navy;
         width: 50%;
     }
+
     #com {
         margin-left: 77px;
         width: 80%;
     }
+
     #combo {
         width: 80%;
     }
@@ -62,28 +64,85 @@
         </div>
     </form>
 
-    <button type="submit" class="btn btn-primary" style="width: 15%; margin-top: 20px; margin-bottom: 20px;" @onclick="Agregar">Agregar</button>
+    <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit" class="btn btn-primary" style="width: 15%; margin-top: 20px; margin-bottom: 20px;" @onclick="Agregar">Agregar</button>
 
-    @if (mensaje == 1)
+    
+    
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Factura</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label style="font-size: 20px;"><strong>Cliente: </strong> @clientes </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Marca: </strong> @vehiculo  </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Modelo: </strong> @modelo </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Año: </strong> @año </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Color: </strong> @color </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Tipo: </strong> @tipo </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Capacidad: </strong> @capacidad </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Pasajeros: </strong> @pasajeros </label>
+                            </div>
+                            <div class="col">
+                                <br />
+                                <label style="font-size: 20px;"><strong>Matricula: </strong> @matricula </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Numero de seguro: </strong> @numero_seguro </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Latitud: </strong> @latitud </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Longitud: </strong> @longitud </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Fecha inicio:  </strong> @fechainicio </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Fecha fin:  </strong> @fechafin </label>
+                                <br />
+                                <label style="font-size: 20px;"><strong>Precio por dia: </strong> @precio </label>
+
+                            </div>
+                        </div>
+                        @if (mensaje == 1)
+                        {
+                            <div class="alert alert-success mt-2 mb-2 ml-5 mr-5" role="alert">Reserva Agregada Exitosamente</div>
+                        }
+                        @if (mensaje == 2)
     {
-        <div class="alert alert-success mt-2 mb-2" role="alert">Reserva Agregada Exitosamente</div>
+        <div class="alert alert-danger mt-2 mb-2 ml-5 mr-5" role="alert">En estos momentos este vehiculo no se encuentra disponible</div>
     }
-    @if (mensaje == 2)
-    {
-        <div class="alert alert-danger mt-2 mb-2 ml-3 mr-3" role="alert">En estos momentos este vehiculo no se encuentra disponible</div>
-    }
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" @onclick="Cerrar">Cerrar</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+        </div>
 </div>
 
 @code {
 
-    string clientes = "", vehiculo = "", fechainicio = "", fechafin = "";
+    string clientes = "", vehiculo = "", fechainicio = "", fechafin = "", esta = "";
+    string modelo = "", año = "", color = "", tipo = "", capacidad = "", pasajeros = "", matricula = "", numero_seguro = "", latitud = "", longitud = "", precio = "";
     int mensaje;
     bool validar;
+    string men;
 
     public List<Cliente> GetCliente() => new db_a72daa_proyecContext().Cliente.ToList();
     public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
     public List<Cliente> cliente;
-    public List<Vehiculos> vehiculos;
+    public List<Vehiculos> vehiculos = new List<Vehiculos>();
 
     protected override void OnInitialized()
     {
@@ -95,16 +154,44 @@
     {
         using (db_a72daa_proyecContext db = new db_a72daa_proyecContext())
         {
-            Reservas re = new Reservas();
-            Vehiculos ve = new Vehiculos();
 
             validar = db.Vehiculos.Any(ee => ee.Marca == vehiculo);
-            if(validar)
+
+            if (validar)
             {
-                ve.Estado = "No disponible";
-                mensaje = 2;
+                Validacion(vehiculo);
+
             }
-            else
+            
+        }
+    }
+
+    public void Validacion(string vehicu)
+    {
+        using (db_a72daa_proyecContext db = new db_a72daa_proyecContext())
+        {
+            foreach (var vario in vehiculos)
+            {
+                if (vario.Marca == vehicu)
+                {
+                    men = vario.Estado;
+                    modelo = vario.Modelo;
+                    año = vario.Anio;
+                    color = vario.Color;
+                    precio = vario.PrecioDia;
+                    tipo = vario.Tipo;
+                    capacidad = vario.Capacidad;
+                    pasajeros = vario.Pasajeros;
+                    matricula = vario.Matricula;
+                    numero_seguro = vario.NumSeguro;
+                    latitud = vario.Latitud;
+                    longitud = vario.Longitud;
+                }
+            }
+
+            Reservas re = new Reservas();
+
+            if (men == "Disponible")
             {
                 re.Cliente = clientes;
                 re.Vehiculo = vehiculo;
@@ -114,8 +201,21 @@
                 db.Add(re);
                 db.SaveChanges();
                 mensaje = 1;
+
+
             }
+            else
+            {
+                mensaje = 2;
+            }
+
         }
+
     }
 
+
+    public void Cerrar()
+    {
+
+    }
 }

@@ -549,14 +549,6 @@ C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.csp
 C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.dll
 C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.pdb
 C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Proyecto-final.genruntimeconfig.cache
-C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Vehiculos.razor.g.cs
-C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Vehiculos.razor.g.cs
-C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Beneficios.razor.g.cs
-C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Deudores.razor.g.cs
-C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Mapa.razor.g.cs
-C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Beneficios.razor.g.cs
-C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Deudores.razor.g.cs
-C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reportes\Mapa.razor.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Beneficios.razor.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Deudores.razor.g.cs
 C:\Users\dhima\Desktop\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reportes\Mapa.razor.g.cs
@@ -991,3 +983,9 @@ C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\net
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reporte\Mapa-vehiculos.razor.g.cs
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reporte\Reporte-Vehiculo.razor.g.cs
 C:\Users\User\Desktop\Programacion 3\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\LoginLayout.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reporte\Mapa-vehiculos.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Gestion-Reporte\Reporte-Vehiculo.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\LoginLayout.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reporte\Mapa-vehiculos.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\Gestion-Reporte\Reporte-Vehiculo.razor.g.cs
+C:\2021\Proyecto-final\Proyecto-final\obj\Debug\netcoreapp3.1\Razor\Pages\LoginLayout.razor.g.cs

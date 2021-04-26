@@ -5,30 +5,37 @@
 @inject ICargarArchivo cargarArchivo
 @inject NavigationManager NavigationManager
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Marca</th>
-            <th>Modelo</th>
-        </tr>
-    </thead>
-    <tbody>
-        @if (lista_vehiculos != null)
+
+
+<div class="container" id="carta">
+    @if (lista_vehiculos != null)
+    {
+        @foreach (var ve in lista_vehiculos)
         {
-@foreach (var item in lista_vehiculos)
-{
-<tr>
-    <td>@item.Marca</td>
-    <td>@item.Modelo</td>
-</tr>}}
-    </tbody>
-</table>
+            <div class="card" style="width: 20rem; height: 30rem;">
+                <img src="./imagenes/@ve.Foto" class="card-img-top">
+                <div class="card-body">
 
-@code{ List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
 
-            public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
+                    <label><strong>Marca: </strong>@ve.Marca</label><hr>
+                    <label><strong>Modelo: </strong>@ve.Modelo</label><hr>
+                    <label><strong>Año: </strong>@ve.Anio</label><hr>
+                    <label><strong>Color: </strong>@ve.Color</label><hr>
 
-            protected override void OnInitialized()
-            {
-                lista_vehiculos = GetVehiculos();
-            } }
+                    <label><strong>Tipo: </strong>@ve.Tipo</label><hr>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code{
+    List<Vehiculos> lista_vehiculos = new List<Vehiculos>();
+
+    public List<Vehiculos> GetVehiculos() => new db_a72daa_proyecContext().Vehiculos.ToList();
+
+    protected override void OnInitialized()
+    {
+        lista_vehiculos = GetVehiculos();
+    }
+}
